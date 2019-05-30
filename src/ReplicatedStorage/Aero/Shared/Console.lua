@@ -13,7 +13,7 @@
 
 		Console:Log(...)
 		Console:Warn(...)
-		Console:Error(...)
+		Console:Error(errorMessage)
 		Console:Assert(condition, ...)
 		Console:Time([label])
 		Console:TimeLog([label])
@@ -38,6 +38,12 @@ local DEFAULT_TIME_LABEL = "default"
 local timeLabels = {}
 
 
+local errorEvent = Instance.new("BindableEvent")
+errorEvent.Event:Connect(function(err)
+	error(err, 0)
+end)
+
+
 local function ResolveTimeLabel(label)
 	if (label == nil) then label = DEFAULT_TIME_LABEL end
 	assert(type(label) == "string", "Label must be a string or nil")
@@ -57,15 +63,15 @@ function Console:Warn(...)
 end
 
 
-function Console:Error(...)
+function Console:Error(err)
 	if (not self.Enabled) then return end
-	error(...)
+	errorEvent:Fire(err)
 end
 
 
 function Console:Assert(condition, ...)
 	if (not condition) then
-		self:Warn(...)
+		self:Error(...)
 	end
 end
 
