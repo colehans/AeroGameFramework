@@ -14,7 +14,7 @@
 		Console:Log(...)
 		Console:Warn(...)
 		Console:Error(errorMessage)
-		Console:Assert(condition, ...)
+		Console:Assert(condition, message)
 		Console:Time([label])
 		Console:TimeLog([label])
 		Console:TimeEnd([label])
@@ -39,9 +39,7 @@ local timeLabels = {}
 
 
 local errorEvent = Instance.new("BindableEvent")
-errorEvent.Event:Connect(function(err)
-	error(err, 0)
-end)
+errorEvent.Event:Connect(error)
 
 
 local function ResolveTimeLabel(label)
@@ -65,13 +63,13 @@ end
 
 function Console:Error(err)
 	if (not self.Enabled) then return end
-	errorEvent:Fire(err)
+	errorEvent:Fire(err, 0)
 end
 
 
-function Console:Assert(condition, ...)
+function Console:Assert(condition, message)
 	if (not condition) then
-		self:Error(...)
+		self:Error(message)
 	end
 end
 
