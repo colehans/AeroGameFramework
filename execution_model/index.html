@@ -1,0 +1,516 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation for the AeroGameFramework">
+      
+      
+        <link rel="canonical" href="https://github.com/Sleitnick/AeroGameFramework/execution_model/">
+      
+      
+        <meta name="author" content="Stephen Leitnick">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+    
+    
+      
+        <title>Execution Model - AeroGameFramework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#execution-model" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/Sleitnick/AeroGameFramework" title="AeroGameFramework" class="md-header-nav__button md-logo">
+          
+            <img src="../img/logo_64.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              AeroGameFramework
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Execution Model
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://github.com/Sleitnick/AeroGameFramework" title="AeroGameFramework" class="md-nav__button md-logo">
+      
+        <img src="../img/logo_64.png" width="48" height="48">
+      
+    </a>
+    AeroGameFramework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../install/" title="Install & Setup" class="md-nav__link">
+      Install & Setup
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../services/" title="Services" class="md-nav__link">
+      Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../controllers/" title="Controllers" class="md-nav__link">
+      Controllers
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../modules/" title="Modules" class="md-nav__link">
+      Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Execution Model
+      </label>
+    
+    <a href="./" title="Execution Model" class="md-nav__link md-nav__link--active">
+      Execution Model
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#services-and-controllers" class="md-nav__link">
+    Services and Controllers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules-and-shared" class="md-nav__link">
+    Modules and Shared
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preventing-init-or-start" class="md-nav__link">
+    Preventing Init or Start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-and-best-practices" class="md-nav__link">
+    Notes and Best Practices
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#services-and-controllers" class="md-nav__link">
+    Services and Controllers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules-and-shared" class="md-nav__link">
+    Modules and Shared
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preventing-init-or-start" class="md-nav__link">
+    Preventing Init or Start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-and-best-practices" class="md-nav__link">
+    Notes and Best Practices
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="execution-model">Execution Model<a class="headerlink" href="#execution-model" title="Permanent link">&para;</a></h1>
+<h2 id="services-and-controllers">Services and Controllers<a class="headerlink" href="#services-and-controllers" title="Permanent link">&para;</a></h2>
+<p>Services and Controllers act as singletons. In other words, only one instance exists per service or controller in a given environment.</p>
+<ol>
+<li>All modules are loaded using <code>require()</code> at the start of runtime.</li>
+<li>All modules have properties and methods exposed via metamethods.</li>
+<li>Each <code>Init</code> method on the modules are invoked one-by-one synchronously.</li>
+<li>Each <code>Start</code> method on the modules are invoked asynchronously.</li>
+<li>The module remains in memory for the remainder of runtime.</li>
+</ol>
+<hr />
+<h2 id="modules-and-shared">Modules and Shared<a class="headerlink" href="#modules-and-shared" title="Permanent link">&para;</a></h2>
+<ol>
+<li>A module (in Modules or Shared) is loaded using <code>require()</code> the first time it is referenced (e.g. lazy-loaded).</li>
+<li>The module has properties and methods exposed via metatable (using <code>WrapTable</code>)</li>
+<li>The module's <code>Init</code> method is invoked synchronously.</li>
+<li>The module's <code>Start</code> method is invoked immediately and asynchronously after the <code>Init</code> method is completed.</li>
+</ol>
+<hr />
+<h2 id="preventing-init-or-start">Preventing <code>Init</code> or <code>Start</code><a class="headerlink" href="#preventing-init-or-start" title="Permanent link">&para;</a></h2>
+<p>There might be times where it is not desired for the framework to invoke either the <code>Start</code> or the <code>Init</code> method on a module, service, or controller. In such an instance, a flag can be added to indicate that the method should not be invoked by the framework.</p>
+<p>The two flags are:</p>
+<ul>
+<li><code>__aeroPreventInit</code></li>
+<li><code>__aeroPreventStart</code></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Set the flag to a truthy value (preferrably just <code>true</code>). See the example under the <a href="/modules/#prevet-init-or-start">Modules</a> page.</p>
+</div>
+<hr />
+<h2 id="notes-and-best-practices">Notes and Best Practices<a class="headerlink" href="#notes-and-best-practices" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The <code>Init</code> and <code>Start</code> methods are always optional, but it is good practice to always include them.</li>
+<li>The <code>Init</code> method should be used to set up the individual module and register events.</li>
+<li>The <code>Init</code> method should try to do as minimal work as possible, as other modules are blocked until it is completed.</li>
+<li>The <code>Init</code> method should not be used to invoke methods from other modules in the framework (that should be done in or after <code>Start</code>)</li>
+<li>Events must be registered in the <code>Init</code> method.</li>
+<li>Events should never be connected or fired within the <code>Init</code> method. Do this within the <code>Start</code> method.</li>
+<li>Because Modules and Shared modules are lazy-loaded, their <code>Init</code> methods are invoked the first time they are referenced.</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../modules/" title="Modules" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Modules
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/Sleitnick/AeroGameFramework" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.ac79c3b0.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

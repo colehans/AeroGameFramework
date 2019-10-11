@@ -1,0 +1,948 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation for the AeroGameFramework">
+      
+      
+        <link rel="canonical" href="https://github.com/Sleitnick/AeroGameFramework/controllers/">
+      
+      
+        <meta name="author" content="Stephen Leitnick">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+    
+    
+      
+        <title>Controllers - AeroGameFramework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#controllers" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/Sleitnick/AeroGameFramework" title="AeroGameFramework" class="md-header-nav__button md-logo">
+          
+            <img src="../img/logo_64.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              AeroGameFramework
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Controllers
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://github.com/Sleitnick/AeroGameFramework" title="AeroGameFramework" class="md-nav__button md-logo">
+      
+        <img src="../img/logo_64.png" width="48" height="48">
+      
+    </a>
+    AeroGameFramework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../install/" title="Install & Setup" class="md-nav__link">
+      Install & Setup
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../services/" title="Services" class="md-nav__link">
+      Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Controllers
+      </label>
+    
+    <a href="./" title="Controllers" class="md-nav__link md-nav__link--active">
+      Controllers
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#injected-properties" class="md-nav__link">
+    Injected Properties:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#injected-methods" class="md-nav__link">
+    Injected Methods:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controllerinit" class="md-nav__link">
+    controller:Init()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controllerstart" class="md-nav__link">
+    controller:Start()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-methods" class="md-nav__link">
+    Custom Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrapmodule" class="md-nav__link">
+    WrapModule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-examples" class="md-nav__link">
+    Other Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-server-to-client-methods" class="md-nav__link">
+    No Server-to-Client Methods
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../modules/" title="Modules" class="md-nav__link">
+      Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../execution_model/" title="Execution Model" class="md-nav__link">
+      Execution Model
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#injected-properties" class="md-nav__link">
+    Injected Properties:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#injected-methods" class="md-nav__link">
+    Injected Methods:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controllerinit" class="md-nav__link">
+    controller:Init()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controllerstart" class="md-nav__link">
+    controller:Start()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-methods" class="md-nav__link">
+    Custom Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrapmodule" class="md-nav__link">
+    WrapModule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-examples" class="md-nav__link">
+    Other Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-server-to-client-methods" class="md-nav__link">
+    No Server-to-Client Methods
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="controllers">Controllers<a class="headerlink" href="#controllers" title="Permanent link">&para;</a></h1>
+<p>A service is a singleton initiated at runtime on the server. Services should serve specific purposes. For instance, the provided DataService allows simplified data management. You might also create a WeaponService, which might be used for holding and figuring out weapon information for the players.</p>
+<p>A controller is a singleton initiated at runtime on the client. Controllers should serve a specific purpose. For instance, the provided Fade controller allows for control of simple screen fading. Controllers often interact with server-side services as well. Another example of a controller could be a Camera controller, which has the task of specifically controlling the player's camera.</p>
+<hr />
+<h2 id="api">API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
+<p>A controller in its simplest form looks like this:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">MyController</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="c1">-- Called after all controllers have been initialized</span>
+    <span class="c1">-- Called asynchronously from other controllers</span>
+    <span class="c1">-- Safe to call any other framework modules</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
+    <span class="c1">-- Called after all modules have been &quot;required&quot; but before &#39;Start()&#39; has been called on any of them</span>
+    <span class="c1">-- Safe to reference &#39;self.Services/Controllers/Modules/Shared&#39;</span>
+    <span class="c1">-- NOT safe to USE/CALL other services yet (use them in/after Start method)</span>
+    <span class="c1">-- Register all events here (but only connect to events in Start)</span>
+<span class="kr">end</span>
+
+<span class="kr">return</span> <span class="n">MyController</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="injected-properties">Injected Properties:<a class="headerlink" href="#injected-properties" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>controller.Controllers</code></td>
+<td>Table of all other controllers, referenced by the name of the ModuleScript</td>
+</tr>
+<tr>
+<td><code>controller.Modules</code></td>
+<td>Table of all modules, referenced by the name of the ModuleScript</td>
+</tr>
+<tr>
+<td><code>controller.Shared</code></td>
+<td>Table of all shared modules, referenced by the name of the ModuleScript</td>
+</tr>
+<tr>
+<td><code>controller.Services</code></td>
+<td>Table of all server-side services, referenced by the name of the ModuleScript</td>
+</tr>
+<tr>
+<td><code>controller.Player</code></td>
+<td>Reference to the LocalPlayer (<code>game.Players.LocalPlayer</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="injected-methods">Injected Methods:<a class="headerlink" href="#injected-methods" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Returns</th>
+<th>Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>void</code></td>
+<td><code>controller:WrapModule(Table tbl)</code></td>
+</tr>
+<tr>
+<td><code>void</code></td>
+<td><code>controller:RegisterEvent(String eventName)</code></td>
+</tr>
+<tr>
+<td><code>void</code></td>
+<td><code>controller:FireEvent(String eventName, ...)</code></td>
+</tr>
+<tr>
+<td><code>void</code></td>
+<td><code>controller:ConnectEvent(String eventName, Function handler)</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="controllerinit"><code>controller:Init()</code><a class="headerlink" href="#controllerinit" title="Permanent link">&para;</a></h2>
+<p>The <code>Init</code> method is called on each controller in the framework in a synchronous and linear progression. In other words, each controller's <code>Init</code> method is invoked one after the other. Each <code>Init</code> method must fully execute before moving onto the next. This is essentially the constructor for the controller singleton.</p>
+<p>The method should be used to set up your controller. For instance, you might want to create events or reference other controllers.</p>
+<p>Use the <code>Init</code> method to register events and initialize any necessary components before the <code>Start</code> method is invoked.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <code>Init</code> method should not invoke any methods from other controllers yet, because it is not guaranteed that those controllers have had their <code>Init</code> methods invoked yet. It is safe to reference other controllers, but not to invoke their methods.</p>
+</div>
+<hr />
+<h2 id="controllerstart"><code>controller:Start()</code><a class="headerlink" href="#controllerstart" title="Permanent link">&para;</a></h2>
+<p>The <code>Start</code> method is called after all controllers have been initialized (i.e. their <code>Init</code> methods have been fully executed). Each <code>Start</code> method is executed on a <em>separate</em> thread (asynchronously). From here, it is safe to reference and invoke other controllers in the framework.</p>
+<hr />
+<h2 id="custom-methods">Custom Methods<a class="headerlink" href="#custom-methods" title="Permanent link">&para;</a></h2>
+<p>Adding your own methods to a controller is very easy. Simply attach a function to the controller table:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">-- Custom method:</span>
+<span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">PrintSomething</span><span class="p">(...)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MyController:&quot;</span><span class="p">,</span> <span class="p">...)</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="c1">-- Invoke the custom method:</span>
+    <span class="n">self</span><span class="p">:</span><span class="n">PrintSomething</span><span class="p">(</span><span class="s2">&quot;Hi&quot;</span><span class="p">,</span> <span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="s2">&quot;ABC&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<p>Other controllers can also invoke your custom method:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">AnotherController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">MyService</span><span class="p">:</span><span class="n">PrintSomething</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<p>You can create and listen to events using the <code>RegisterEvent</code>, <code>ConnectEvent</code>, and <code>FireEvent</code> methods. All events should always be registered within the <code>Init</code> method. The <code>ConnectEvent</code> and <code>FireEvent</code> methods should never be used within an <code>Init</code> method.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="c1">-- Connect to &#39;Hello&#39; event:</span>
+    <span class="n">self</span><span class="p">:</span><span class="n">ConnectEvent</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+    <span class="kr">end</span><span class="p">)</span>
+    <span class="c1">-- Fire &#39;Hello&#39; event:</span>
+    <span class="n">self</span><span class="p">:</span><span class="n">FireEvent</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
+    <span class="c1">-- Register &#39;Hello&#39; event:</span>
+    <span class="n">self</span><span class="p">:</span><span class="n">RegisterEvent</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<p>Alternatively, the Event object is available under Shared:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="c1">-- Connect to &#39;Hello&#39; event:</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Hello</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+    <span class="kr">end</span><span class="p">)</span>
+    <span class="c1">-- Fire &#39;Hello&#39; event:</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Hello</span><span class="p">:</span><span class="n">Fire</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
+    <span class="c1">-- Create &#39;Hello&#39; event:</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Hello</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Shared</span><span class="p">.</span><span class="n">Event</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h2 id="wrapmodule"><code>WrapModule</code><a class="headerlink" href="#wrapmodule" title="Permanent link">&para;</a></h2>
+<p>The <code>WrapModule</code> method can be used to transform a table into a framework-like module. In other words, it sets the table's metatable to the same metatable used by other framework modules, thus exposing the framework to the given table.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+
+    <span class="kd">local</span> <span class="n">thisThing</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="kr">function</span> <span class="nc">thisThing</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;thisThing started&quot;</span><span class="p">)</span>
+    <span class="kr">end</span>
+    <span class="kr">function</span> <span class="nc">thisThing</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;thisThing initialized&quot;</span><span class="p">)</span>
+    <span class="kr">end</span>
+
+    <span class="c1">-- Transform &#39;thisThing&#39; into a framework object:</span>
+    <span class="n">self</span><span class="p">:</span><span class="n">WrapModule</span><span class="p">(</span><span class="n">thisThing</span><span class="p">)</span>
+
+    <span class="c1">-- Another example where an external module is loaded:</span>
+    <span class="kd">local</span> <span class="n">anotherThing</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">someModule</span><span class="p">)</span>
+    <span class="n">self</span><span class="p">:</span><span class="n">WrapModule</span><span class="p">(</span><span class="n">anotherThing</span><span class="p">)</span>
+
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This can be useful if you are requiring other non-framework modules in which you want to expose the framework.</p>
+</div>
+<hr />
+<h2 id="other-examples">Other Examples<a class="headerlink" href="#other-examples" title="Permanent link">&para;</a></h2>
+<p>Invoking another controller:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="kd">local</span> <span class="n">fade</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Controllers</span><span class="p">.</span><span class="n">Fade</span>
+    <span class="n">fade</span><span class="p">:</span><span class="n">SetText</span><span class="p">(</span><span class="s2">&quot;Fade Example&quot;</span><span class="p">)</span>
+    <span class="n">fade</span><span class="p">:</span><span class="n">Out</span><span class="p">()</span>
+    <span class="n">wait</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">fade</span><span class="p">:</span><span class="n">In</span><span class="p">()</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<p>Invoking a service:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="c1">-- Get pints:</span>
+    <span class="kd">local</span> <span class="n">pointsService</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">PointsService</span>
+    <span class="kd">local</span> <span class="n">points</span> <span class="o">=</span> <span class="n">pointsService</span><span class="p">:</span><span class="n">GetPoints</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Points:&quot;</span><span class="p">,</span> <span class="n">points</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<p>Using a module:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="kd">local</span> <span class="n">someModule</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Modules</span><span class="p">.</span><span class="n">SomeModule</span>
+    <span class="n">someModule</span><span class="p">:</span><span class="n">DoSomething</span><span class="p">()</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<p>Using a shared module:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="c1">-- Print the current date:</span>
+    <span class="kd">local</span> <span class="n">Date</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Shared</span><span class="p">.</span><span class="n">Date</span>
+    <span class="kd">local</span> <span class="n">now</span> <span class="o">=</span> <span class="n">Date</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Now&quot;</span><span class="p">,</span> <span class="n">now</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<p>Connecting to a service event:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="kd">local</span> <span class="n">dataService</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">DataService</span>
+    <span class="n">dataService</span><span class="p">.</span><span class="n">Failed</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">errorMessage</span><span class="p">)</span>
+        <span class="n">warn</span><span class="p">(</span><span class="s2">&quot;DataService failed:&quot;</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">errorMessage</span><span class="p">)</span>
+    <span class="kr">end</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<p>Firing a service event:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">-- Client controller:</span>
+<span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">CustomService</span><span class="p">.</span><span class="n">Hello</span><span class="p">:</span><span class="n">Fire</span><span class="p">(</span><span class="s2">&quot;Hello from the client&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">---------------------------------------------------------------------</span>
+
+<span class="c1">-- Server service:</span>
+<span class="kr">function</span> <span class="nc">CustomService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Services</span><span class="p">:</span><span class="n">ConnectClientEvent</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">player</span><span class="p">.</span><span class="n">Name</span> <span class="o">..</span> <span class="s2">&quot; says: &quot;</span> <span class="o">..</span> <span class="n">msg</span><span class="p">)</span>
+    <span class="kr">end</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">CustomService</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
+    <span class="n">self</span><span class="p">:</span><span class="n">RegisterClientEvent</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h2 id="no-server-to-client-methods">No Server-to-Client Methods<a class="headerlink" href="#no-server-to-client-methods" title="Permanent link">&para;</a></h2>
+<p>As you may have noticed, there is no way to create a method on a controller that a server-side service can invoke. This is by design. There are a lot of dangers in allowing the server to invoke client-side methods, and thus the framework simply does not supply a way of doing so. Internally, this would be allowed via <code>remoteFunction:InvokeClient(...)</code>. If the server needs information from a client, a client controller should fire a service event.</p>
+<p>For more information, please read the "Note" and "Warning" section under the <a href="https://developer.roblox.com/en-us/api-reference/function/RemoteFunction/InvokeClient"><code>RemoteFunction:InvokeClient()</code> documentation page</a> and this <a href="https://youtu.be/0H_xcA-0LDE">YouTube video</a> discussing the issue in more detail.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../services/" title="Services" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Services
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../modules/" title="Modules" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Modules
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/Sleitnick/AeroGameFramework" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.ac79c3b0.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
