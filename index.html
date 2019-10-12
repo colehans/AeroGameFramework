@@ -254,6 +254,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
       
       
       
@@ -359,6 +366,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
       
       
       
@@ -380,8 +394,74 @@
 <h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h2>
 <p>AeroGameFramework is a Roblox game framework that makes development easy and fun. The framework is designed to simplify the communication between modules and seamlessly bridge the gap between the server and client. Never again will you have to touch RemoteFunctions or RemoteEvents.</p>
 <h2 id="collaborate">Collaborate<a class="headerlink" href="#collaborate" title="Permanent link">&para;</a></h2>
-<p>AeroGameFramework is an open-source project, and your support is much appreciated. Feel free to report bugs, suggest features, and make pull requests. Please visit the <a href="https://github.com/Sleitnick/AeroGameFramework">GitHub repository</a>{.new-tab} for more information.</p>
+<p>AeroGameFramework is an open-source project, and your support is much appreciated. Feel free to report bugs, suggest features, and make pull requests. Please visit the <a href="https://github.com/Sleitnick/AeroGameFramework">GitHub repository</a> for more information.</p>
 <p>The framework was built and is supported primary by <a href="https://github.com/Sleitnick">Stephen Leitnick</a>.</p>
+<hr />
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p>Here is an example of a client-side controller invoking a server-side service to respawn the player. Notice that no remote objects have to be explicitly referenced:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">-- Client:</span>
+<span class="kd">local</span> <span class="n">MyController</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="kd">local</span> <span class="n">didRespawn</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">MyService</span><span class="p">:</span><span class="n">Respawn</span><span class="p">()</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">didRespawn</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="p">...</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="kr">return</span> <span class="n">MyController</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">-- Server:</span>
+<span class="kd">local</span> <span class="n">MyService</span> <span class="o">=</span> <span class="p">{</span><span class="n">Client</span> <span class="o">=</span> <span class="p">{}}</span>
+
+<span class="kr">function</span> <span class="nc">MyService</span><span class="p">.</span><span class="nc">Client</span><span class="p">:</span><span class="nf">Respawn</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+
+    <span class="kd">local</span> <span class="n">humanoid</span> <span class="o">=</span> <span class="n">player</span><span class="p">.</span><span class="n">Character</span> <span class="ow">and</span> <span class="n">player</span><span class="p">.</span><span class="n">Character</span><span class="p">:</span><span class="n">FindFirstChild</span><span class="p">(</span><span class="s2">&quot;Humanoid&quot;</span><span class="p">)</span>
+
+    <span class="c1">-- Only allow respawning if the player is dead:</span>
+    <span class="kr">if</span> <span class="p">((</span><span class="ow">not</span> <span class="n">humanoid</span><span class="p">)</span> <span class="ow">or</span> <span class="n">humanoid</span><span class="p">.</span><span class="n">Health</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="n">player</span><span class="p">:</span><span class="n">LoadCharacter</span><span class="p">()</span>
+        <span class="kr">return</span> <span class="kc">true</span>
+    <span class="kr">end</span>
+
+    <span class="kr">return</span> <span class="kc">false</span>
+
+<span class="kr">end</span>
+
+<span class="kr">return</span> <span class="n">MyService</span>
+</pre></div>
+</td></tr></table>
+
+<p>These are complete code examples. They could be put into the framework and work as-is.</p>
                 
                   
                 
