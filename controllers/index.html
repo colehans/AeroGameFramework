@@ -309,6 +309,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#forcing-init-order" class="md-nav__link">
+    Forcing Init Order
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#other-examples" class="md-nav__link">
     Other Examples
   </a>
@@ -483,6 +490,13 @@
         <li class="md-nav__item">
   <a href="#wrapmodule" class="md-nav__link">
     WrapModule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forcing-init-order" class="md-nav__link">
+    Forcing Init Order
   </a>
   
 </li>
@@ -813,6 +827,42 @@
 <p class="admonition-title">Tip</p>
 <p>This can be useful if you are requiring other non-framework modules in which you want to expose the framework.</p>
 </div>
+<hr />
+<h2 id="forcing-init-order">Forcing <code>Init</code> Order<a class="headerlink" href="#forcing-init-order" title="Permanent link">&para;</a></h2>
+<p>By setting the <code>__aeroOrder</code> field, the <code>Init</code> execution order can be defined. By default, the order of execution is unknown.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">MyController</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">MyController</span><span class="p">.</span><span class="n">__aeroOrder</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="kr">function</span> <span class="nc">MyController</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MyController will be initialized before AnotherController&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="p">...</span>
+
+<span class="kd">local</span> <span class="n">AnotherController</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">AnotherController</span><span class="p">.</span><span class="n">__aeroOrder</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="kr">function</span> <span class="nc">AnotherController</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AnotherController will be initialized after MyController&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+</td></tr></table>
+
+<p>By practice, it is discouraged to utilize another controller before entering into the <code>Start</code> phase of the controller (i.e. after all controllers have been initialized). However, using <code>__aeroOrder</code> can be used to guarantee initialization order. In the above example, <code>AnotherController</code> would be able to safely utilize <code>MyController</code>, knowing that <code>MyController</code> is guaranteed to have been initialized due to the execution order.</p>
 <hr />
 <h2 id="other-examples">Other Examples<a class="headerlink" href="#other-examples" title="Permanent link">&para;</a></h2>
 <h3 id="invoking-another-controller">Invoking another controller<a class="headerlink" href="#invoking-another-controller" title="Permanent link">&para;</a></h3>

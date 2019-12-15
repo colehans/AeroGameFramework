@@ -285,6 +285,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#forcing-init-order" class="md-nav__link">
+    Forcing Init Order
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#preventing-init-or-start" class="md-nav__link">
     Preventing Init or Start
   </a>
@@ -344,6 +351,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#forcing-init-order" class="md-nav__link">
+    Forcing Init Order
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#preventing-init-or-start" class="md-nav__link">
     Preventing Init or Start
   </a>
@@ -392,6 +406,14 @@
 <li>The module's <code>Init</code> method is invoked synchronously.</li>
 <li>The module's <code>Start</code> method is invoked immediately and asynchronously after the <code>Init</code> method is completed.</li>
 </ol>
+<hr />
+<h2 id="forcing-init-order">Forcing <code>Init</code> Order<a class="headerlink" href="#forcing-init-order" title="Permanent link">&para;</a></h2>
+<p>The order of which <code>Init</code> is invoked for services and controllers can be explicitly set. This is done through the <code>__aeroOrder</code> field.</p>
+<p>Simply set the service or controller <code>__aeroOrder</code> field to a number. The <code>Init</code> process will execute based on ascending order. Services and controllers without an <code>__aeroOrder</code> field set will be executed last (technically, the default order is set to <code>math.huge</code>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>__aeroOrder</code> field can be any valid number, including negatives and non-whole numbers. See the examples under the <a href="../services/">Services</a> and <a href="../controllers/">Controllers</a> page.</p>
+</div>
 <hr />
 <h2 id="preventing-init-or-start">Preventing <code>Init</code> or <code>Start</code><a class="headerlink" href="#preventing-init-or-start" title="Permanent link">&para;</a></h2>
 <p>There might be times where it is not desired for the framework to invoke either the <code>Start</code> or the <code>Init</code> method on a module, service, or controller. In such an instance, a flag can be added to indicate that the method should not be invoked by the framework.</p>
