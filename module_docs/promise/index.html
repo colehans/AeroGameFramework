@@ -89,6 +89,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#static-methods" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -348,9 +352,305 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Promise
+      </label>
+    
     <a href="./" title="Promise" class="md-nav__link md-nav__link--active">
       Promise
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#static-methods" class="md-nav__link">
+    Static Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#promisenewfunction-callback" class="md-nav__link">
+    Promise.new(Function callback)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseasyncfunction-callback" class="md-nav__link">
+    Promise.Async(Function callback)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisepromisifyfunction-callback" class="md-nav__link">
+    Promise.Promisify(Function callback)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseresolve" class="md-nav__link">
+    Promise.Resolve(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisereject" class="md-nav__link">
+    Promise.Reject(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisetry" class="md-nav__link">
+    Promise.Try(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisealltable-promises" class="md-nav__link">
+    Promise.All(Table promises)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisesometable-promises-number-amount" class="md-nav__link">
+    Promise.Some(Table promises, Number amount)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseanytable-promises" class="md-nav__link">
+    Promise.Any(Table promises)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseallsettledtable-promises" class="md-nav__link">
+    Promise.AllSettled(Table promises)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseracetable-promises" class="md-nav__link">
+    Promise.Race(Table promises)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseistable-object" class="md-nav__link">
+    Promise.Is(Table object)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisedelaynumber-seconds" class="md-nav__link">
+    Promise.Delay(Number seconds)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-methods" class="md-nav__link">
+    Object Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thenfunction-success-function-failure" class="md-nav__link">
+    Then(Function success, Function failure)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#catchfunction-failure" class="md-nav__link">
+    Catch(Function failure)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tapfunction-tap" class="md-nav__link">
+    Tap(Function tap)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finallyfunction-finally" class="md-nav__link">
+    Finally(Function finally)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donefunction-done" class="md-nav__link">
+    Done(Function done)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thencallfunciton-callback" class="md-nav__link">
+    ThenCall(Funciton callback, ...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finallycallfunction-callback" class="md-nav__link">
+    FinallyCall(Function callback, ...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donecallfunction-callback" class="md-nav__link">
+    DoneCall(Function callback, ...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thenreturn" class="md-nav__link">
+    ThenReturn(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finallyreturn" class="md-nav__link">
+    FinallyReturn(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donereturn" class="md-nav__link">
+    DoneReturn(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeoutnumber-seconds-variant-timeoutvalue" class="md-nav__link">
+    Timeout(Number seconds, Variant timeoutValue)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancel" class="md-nav__link">
+    Cancel()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#await" class="md-nav__link">
+    Await()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awaitstatus" class="md-nav__link">
+    AwaitStatus()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expect" class="md-nav__link">
+    Expect(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstatus" class="md-nav__link">
+    GetStatus()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    Status
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    Types
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#promisestatus" class="md-nav__link">
+    PromiseStatus
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -408,6 +708,304 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#static-methods" class="md-nav__link">
+    Static Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#promisenewfunction-callback" class="md-nav__link">
+    Promise.new(Function callback)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseasyncfunction-callback" class="md-nav__link">
+    Promise.Async(Function callback)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisepromisifyfunction-callback" class="md-nav__link">
+    Promise.Promisify(Function callback)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseresolve" class="md-nav__link">
+    Promise.Resolve(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisereject" class="md-nav__link">
+    Promise.Reject(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisetry" class="md-nav__link">
+    Promise.Try(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisealltable-promises" class="md-nav__link">
+    Promise.All(Table promises)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisesometable-promises-number-amount" class="md-nav__link">
+    Promise.Some(Table promises, Number amount)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseanytable-promises" class="md-nav__link">
+    Promise.Any(Table promises)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseallsettledtable-promises" class="md-nav__link">
+    Promise.AllSettled(Table promises)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseracetable-promises" class="md-nav__link">
+    Promise.Race(Table promises)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promiseistable-object" class="md-nav__link">
+    Promise.Is(Table object)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promisedelaynumber-seconds" class="md-nav__link">
+    Promise.Delay(Number seconds)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-methods" class="md-nav__link">
+    Object Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thenfunction-success-function-failure" class="md-nav__link">
+    Then(Function success, Function failure)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#catchfunction-failure" class="md-nav__link">
+    Catch(Function failure)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tapfunction-tap" class="md-nav__link">
+    Tap(Function tap)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finallyfunction-finally" class="md-nav__link">
+    Finally(Function finally)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donefunction-done" class="md-nav__link">
+    Done(Function done)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thencallfunciton-callback" class="md-nav__link">
+    ThenCall(Funciton callback, ...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finallycallfunction-callback" class="md-nav__link">
+    FinallyCall(Function callback, ...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donecallfunction-callback" class="md-nav__link">
+    DoneCall(Function callback, ...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thenreturn" class="md-nav__link">
+    ThenReturn(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finallyreturn" class="md-nav__link">
+    FinallyReturn(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donereturn" class="md-nav__link">
+    DoneReturn(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeoutnumber-seconds-variant-timeoutvalue" class="md-nav__link">
+    Timeout(Number seconds, Variant timeoutValue)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancel" class="md-nav__link">
+    Cancel()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#await" class="md-nav__link">
+    Await()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awaitstatus" class="md-nav__link">
+    AwaitStatus()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expect" class="md-nav__link">
+    Expect(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstatus" class="md-nav__link">
+    GetStatus()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    Status
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    Types
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#promisestatus" class="md-nav__link">
+    PromiseStatus
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -416,7 +1014,101 @@
                 
                   <h1>Promise</h1>
                 
-                
+                <p>AGF uses <a href="https://github.com/evaera/roblox-lua-promise">evaera's Promise implementation</a>. See the <a href="https://eryn.io/roblox-lua-promise/lib/">documentation</a> for that implementation.</p>
+<p>A few modifications have been made to the Promise object for AGF. Most notably, PascalCase mappings have been added for all public methods, as well as simplified versions. For instance, the <code>andThen</code> method has a mapping to both <code>AndThen</code> as well as <code>Then</code>. This has been done to match the PascalCase styling of AGF.</p>
+<p>The below documentation favors the PascalCase methods. However, the original camelCase methods still exist.</p>
+<hr />
+<h2 id="static-methods">Static Methods<a class="headerlink" href="#static-methods" title="Permanent link">&para;</a></h2>
+<h3 id="promisenewfunction-callback"><a href="https://eryn.io/roblox-lua-promise/lib/#new"><code>Promise.new(Function callback)</code></a><a class="headerlink" href="#promisenewfunction-callback" title="Permanent link">&para;</a></h3>
+<p>Create a new promise object. The callback receives a 'resolve' and 'reject' function that can then be called within the function.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">promise</span> <span class="o">=</span> <span class="n">Promise</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">resolve</span><span class="p">,</span> <span class="n">reject</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="n">thisThingWorked</span><span class="p">()</span> <span class="kr">then</span>
+        <span class="n">resolve</span><span class="p">()</span>
+    <span class="kr">else</span>
+        <span class="n">reject</span><span class="p">(</span><span class="s2">&quot;It didn&#39;t work&quot;</span><span class="p">)</span>
+    <span class="kr">end</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="promiseasyncfunction-callback"><a href="https://eryn.io/roblox-lua-promise/lib/#async"><code>Promise.Async(Function callback)</code></a><a class="headerlink" href="#promiseasyncfunction-callback" title="Permanent link">&para;</a></h3>
+<p>This is the same as <code>Promise.new</code>, except that it allows yielding, and thus should be used if the promise body needs to yield at all.</p>
+<hr />
+<h3 id="promisepromisifyfunction-callback"><a href="https://eryn.io/roblox-lua-promise/lib/#promisify"><code>Promise.Promisify(Function callback)</code></a><a class="headerlink" href="#promisepromisifyfunction-callback" title="Permanent link">&para;</a></h3>
+<p>Creates a promise wrapper for a yielding function.</p>
+<hr />
+<h3 id="promiseresolve"><a href="https://eryn.io/roblox-lua-promise/lib/#resolve"><code>Promise.Resolve(...)</code></a><a class="headerlink" href="#promiseresolve" title="Permanent link">&para;</a></h3>
+<p>Creates an immediately-resolved promise with the given value.</p>
+<hr />
+<h3 id="promisereject"><a href="https://eryn.io/roblox-lua-promise/lib/#reject"><code>Promise.Reject(...)</code></a><a class="headerlink" href="#promisereject" title="Permanent link">&para;</a></h3>
+<p>Creates an immediately-rejected promise with the given value.</p>
+<hr />
+<h3 id="promisetry"><a href="https://eryn.io/roblox-lua-promise/lib/#try"><code>Promise.Try(...)</code></a><a class="headerlink" href="#promisetry" title="Permanent link">&para;</a></h3>
+<p>Starts a promise chain and turns synchronous errors into rejections.</p>
+<hr />
+<h3 id="promisealltable-promises"><a href="https://eryn.io/roblox-lua-promise/lib/#all"><code>Promise.All(Table promises)</code></a><a class="headerlink" href="#promisealltable-promises" title="Permanent link">&para;</a></h3>
+<p>Creates a new promise with a list of other promises. It is resolved once all promises in the table are resolved, and is rejected if even one of the promises is rejected. This is a great method when multiple requests need to be made at the same time but do not depend on each other.</p>
+<hr />
+<h3 id="promisesometable-promises-number-amount"><a href="https://eryn.io/roblox-lua-promise/lib/#some"><code>Promise.Some(Table promises, Number amount)</code></a><a class="headerlink" href="#promisesometable-promises-number-amount" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="promiseanytable-promises"><a href="https://eryn.io/roblox-lua-promise/lib/#any"><code>Promise.Any(Table promises)</code></a><a class="headerlink" href="#promiseanytable-promises" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="promiseallsettledtable-promises"><a href="https://eryn.io/roblox-lua-promise/lib/#allsettled"><code>Promise.AllSettled(Table promises)</code></a><a class="headerlink" href="#promiseallsettledtable-promises" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="promiseracetable-promises"><a href="https://eryn.io/roblox-lua-promise/lib/#race"><code>Promise.Race(Table promises)</code></a><a class="headerlink" href="#promiseracetable-promises" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="promiseistable-object"><a href="https://eryn.io/roblox-lua-promise/lib/#is"><code>Promise.Is(Table object)</code></a><a class="headerlink" href="#promiseistable-object" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="promisedelaynumber-seconds"><a href="https://eryn.io/roblox-lua-promise/lib/#delay"><code>Promise.Delay(Number seconds)</code></a><a class="headerlink" href="#promisedelaynumber-seconds" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="object-methods">Object Methods<a class="headerlink" href="#object-methods" title="Permanent link">&para;</a></h2>
+<h3 id="thenfunction-success-function-failure"><a href="https://eryn.io/roblox-lua-promise/lib/#andthen"><code>Then(Function success, Function failure)</code></a><a class="headerlink" href="#thenfunction-success-function-failure" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="catchfunction-failure"><a href="https://eryn.io/roblox-lua-promise/lib/#catch"><code>Catch(Function failure)</code></a><a class="headerlink" href="#catchfunction-failure" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="tapfunction-tap"><a href="https://eryn.io/roblox-lua-promise/lib/#tap"><code>Tap(Function tap)</code></a><a class="headerlink" href="#tapfunction-tap" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="finallyfunction-finally"><a href="https://eryn.io/roblox-lua-promise/lib/#finally"><code>Finally(Function finally)</code></a><a class="headerlink" href="#finallyfunction-finally" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="donefunction-done"><a href="https://eryn.io/roblox-lua-promise/lib/#done"><code>Done(Function done)</code></a><a class="headerlink" href="#donefunction-done" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="thencallfunciton-callback"><a href="https://eryn.io/roblox-lua-promise/lib/#andthen"><code>ThenCall(Funciton callback, ...)</code></a><a class="headerlink" href="#thencallfunciton-callback" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="finallycallfunction-callback"><a href="https://eryn.io/roblox-lua-promise/lib/#finallycall"><code>FinallyCall(Function callback, ...)</code></a><a class="headerlink" href="#finallycallfunction-callback" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="donecallfunction-callback"><a href="https://eryn.io/roblox-lua-promise/lib/#donecall"><code>DoneCall(Function callback, ...)</code></a><a class="headerlink" href="#donecallfunction-callback" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="thenreturn"><a href="https://eryn.io/roblox-lua-promise/lib/#thenreturn"><code>ThenReturn(...)</code></a><a class="headerlink" href="#thenreturn" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="finallyreturn"><a href="https://eryn.io/roblox-lua-promise/lib/#finallyreturn"><code>FinallyReturn(...)</code></a><a class="headerlink" href="#finallyreturn" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="donereturn"><a href="https://eryn.io/roblox-lua-promise/lib/#donereturn"><code>DoneReturn(...)</code></a><a class="headerlink" href="#donereturn" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="timeoutnumber-seconds-variant-timeoutvalue"><a href="https://eryn.io/roblox-lua-promise/lib/#timeout"><code>Timeout(Number seconds, Variant timeoutValue)</code></a><a class="headerlink" href="#timeoutnumber-seconds-variant-timeoutvalue" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="cancel"><a href="https://eryn.io/roblox-lua-promise/lib/#cancel"><code>Cancel()</code></a><a class="headerlink" href="#cancel" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="await"><a href="https://eryn.io/roblox-lua-promise/lib/#await"><code>Await()</code></a><a class="headerlink" href="#await" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="awaitstatus"><a href="https://eryn.io/roblox-lua-promise/lib/#awaitstatus"><code>AwaitStatus()</code></a><a class="headerlink" href="#awaitstatus" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="expect"><a href="https://eryn.io/roblox-lua-promise/lib/#expect"><code>Expect(...)</code></a><a class="headerlink" href="#expect" title="Permanent link">&para;</a></h3>
+<hr />
+<h3 id="getstatus"><a href="https://eryn.io/roblox-lua-promise/lib/#getstatus"><code>GetStatus()</code></a><a class="headerlink" href="#getstatus" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="status"><a href="https://eryn.io/roblox-lua-promise/lib/#status">Status</a><a class="headerlink" href="#status" title="Permanent link">&para;</a></h3>
+<p>The PromiseStatus of the promise</p>
+<h2 id="types">Types<a class="headerlink" href="#types" title="Permanent link">&para;</a></h2>
+<h3 id="promisestatus"><a href="https://eryn.io/roblox-lua-promise/lib/#promisestatus">PromiseStatus</a><a class="headerlink" href="#promisestatus" title="Permanent link">&para;</a></h3>
+<p>Possible values: Started, Resolved, Rejected, Cancelled</p>
                 
                   
                 
