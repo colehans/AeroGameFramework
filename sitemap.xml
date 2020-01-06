@@ -31,42 +31,87 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/base64/</loc>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/server_services/store_service/</loc>
      <lastmod>2020-01-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/date/</loc>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/server_modules/data/</loc>
      <lastmod>2020-01-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/event/</loc>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/client_controllers/user_input/</loc>
      <lastmod>2020-01-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/listener_list/</loc>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/client_controllers/fade/</loc>
      <lastmod>2020-01-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/promise/</loc>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/client_controllers/task_scheduler/</loc>
      <lastmod>2020-01-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/string_util/</loc>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/client_modules/camera_shaker/</loc>
      <lastmod>2020-01-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/table_util/</loc>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/client_modules/smooth/</loc>
      <lastmod>2020-01-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/thread/</loc>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/client_modules/tween/</loc>
+     <lastmod>2020-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/client_modules/pid/</loc>
+     <lastmod>2020-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/shared/base64/</loc>
+     <lastmod>2020-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/shared/date/</loc>
+     <lastmod>2020-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/shared/event/</loc>
+     <lastmod>2020-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/shared/listener_list/</loc>
+     <lastmod>2020-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/shared/promise/</loc>
+     <lastmod>2020-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/shared/string_util/</loc>
+     <lastmod>2020-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/shared/table_util/</loc>
+     <lastmod>2020-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/Sleitnick/AeroGameFramework/module_docs/shared/thread/</loc>
      <lastmod>2020-01-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
