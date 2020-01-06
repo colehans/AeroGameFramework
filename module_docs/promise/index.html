@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for the AeroGameFramework">
       
       
-        <link rel="canonical" href="https://github.com/Sleitnick/AeroGameFramework/modules/">
+        <link rel="canonical" href="https://github.com/Sleitnick/AeroGameFramework/module_docs/promise/">
       
       
         <meta name="author" content="Stephen Leitnick">
@@ -37,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../img/logo_32.png">
+      <link rel="shortcut icon" href="../../img/logo_32.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
-        <title>Modules - AeroGameFramework</title>
+        <title>Promise - AeroGameFramework</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -66,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
     
     
@@ -89,10 +89,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#modules" tabindex="1" class="md-skip">
-        Skip to content
-      </a>
-    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -100,7 +96,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://github.com/Sleitnick/AeroGameFramework" title="AeroGameFramework" class="md-header-nav__button md-logo">
           
-            <img src="../img/logo_64.png" width="24" height="24">
+            <img src="../../img/logo_64.png" width="24" height="24">
           
         </a>
       </div>
@@ -115,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Modules
+                Promise
               
             </span>
           
@@ -170,7 +166,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://github.com/Sleitnick/AeroGameFramework" title="AeroGameFramework" class="md-nav__button md-logo">
       
-        <img src="../img/logo_64.png" width="48" height="48">
+        <img src="../../img/logo_64.png" width="48" height="48">
       
     </a>
     AeroGameFramework
@@ -184,7 +180,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -196,7 +192,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../install/" title="Install & Setup" class="md-nav__link">
+    <a href="../../install/" title="Install & Setup" class="md-nav__link">
       Install & Setup
     </a>
   </li>
@@ -208,7 +204,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../services/" title="Services" class="md-nav__link">
+    <a href="../../services/" title="Services" class="md-nav__link">
       Services
     </a>
   </li>
@@ -220,7 +216,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../controllers/" title="Controllers" class="md-nav__link">
+    <a href="../../controllers/" title="Controllers" class="md-nav__link">
       Controllers
     </a>
   </li>
@@ -230,56 +226,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Modules
-      </label>
-    
-    <a href="./" title="Modules" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../modules/" title="Modules" class="md-nav__link">
       Modules
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prevent-init-or-start" class="md-nav__link">
-    Prevent Init or Start
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -289,7 +240,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../execution_model/" title="Execution Model" class="md-nav__link">
+    <a href="../../execution_model/" title="Execution Model" class="md-nav__link">
       Execution Model
     </a>
   </li>
@@ -299,10 +250,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       Module Docs
@@ -318,10 +271,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1" checked>
     
     <label class="md-nav__link" for="nav-7-1">
       Shared Modules
@@ -339,7 +294,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../module_docs/base64/" title="Base64" class="md-nav__link">
+    <a href="../base64/" title="Base64" class="md-nav__link">
       Base64
     </a>
   </li>
@@ -351,7 +306,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../module_docs/date/" title="Date" class="md-nav__link">
+    <a href="../date/" title="Date" class="md-nav__link">
       Date
     </a>
   </li>
@@ -363,7 +318,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../module_docs/event/" title="Event" class="md-nav__link">
+    <a href="../event/" title="Event" class="md-nav__link">
       Event
     </a>
   </li>
@@ -375,7 +330,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../module_docs/listener_list/" title="ListenerList" class="md-nav__link">
+    <a href="../listener_list/" title="ListenerList" class="md-nav__link">
       ListenerList
     </a>
   </li>
@@ -385,11 +340,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../module_docs/promise/" title="Promise" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Promise" class="md-nav__link md-nav__link--active">
       Promise
     </a>
+    
   </li>
 
         
@@ -399,7 +361,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../module_docs/string_util/" title="StringUtil" class="md-nav__link">
+    <a href="../string_util/" title="StringUtil" class="md-nav__link">
       StringUtil
     </a>
   </li>
@@ -411,7 +373,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../module_docs/table_util/" title="TableUtil" class="md-nav__link">
+    <a href="../table_util/" title="TableUtil" class="md-nav__link">
       TableUtil
     </a>
   </li>
@@ -423,7 +385,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../module_docs/thread/" title="Thread" class="md-nav__link">
+    <a href="../thread/" title="Thread" class="md-nav__link">
       Thread
     </a>
   </li>
@@ -446,102 +408,15 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prevent-init-or-start" class="md-nav__link">
-    Prevent Init or Start
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                <h1 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h1>
-<p>This section covers the three environments where modules exist: <code>Server</code>, <code>Client</code>, and <code>Shared</code>. Modules behave in the same way in each location.</p>
-<hr />
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Like other framework objects, modules can also have <code>Init</code> and <code>Start</code> methods. However, these methods are optional.</p>
-<p>The biggest difference with Modules is that they are lazy-loaded. In other words, modules are not necessarily loaded at the beginning of runtime. Instead, they are loaded the first time they are referenced. What this means is that you can have a large collection of modules that you reuse within many projects, but are not necessarily eating up much memory.</p>
-<p>Lazy-loading is handled in the background, and it should not affect anything regarding the way you use a module. The most noticeable difference is that the <code>Init</code> and <code>Start</code> methods will not be invoked until the first time a module is referenced.</p>
-<p>Like any ModuleScript on Roblox, modules have the same structure:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">MyModule</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="c1">-- &#39;MyModule:Start()&#39; and &#39;MyModule:Init()&#39; methods are optional.</span>
-
-<span class="kr">return</span> <span class="n">MyModule</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h2 id="prevent-init-or-start">Prevent <code>Init</code> or <code>Start</code><a class="headerlink" href="#prevent-init-or-start" title="Permanent link">&para;</a></h2>
-<p>If you are trying to use a module that already has a <code>Start</code> or <code>Init</code> method that doesn't relate to the AeroGameFramework (e.g. a 3rd-party module not designed for the framework), then you can prevent the framework from invoking these methods. This is done by setting the <code>__aeroPreventInit</code> and <code>__aeroPreventStart</code> flags on the module. Note that those two flags are prefixed by two underscores, similar to Lua metamethods.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">MyModule</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="c1">-- Prevent the framework from invoking the &#39;Start&#39; method:</span>
-<span class="n">MyModule</span><span class="p">.</span><span class="n">__aeroPreventStart</span> <span class="o">=</span> <span class="kc">true</span>
-
-<span class="kr">function</span> <span class="nc">MyModule</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
-    <span class="c1">-- Won&#39;t be invoked by the framework</span>
-<span class="kr">end</span>
-
-<span class="kr">function</span> <span class="nc">MyModule</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
-    <span class="c1">-- Still will be invoked by the framework</span>
-<span class="kr">end</span>
-
-<span class="kr">return</span> <span class="n">MyModule</span>
-</pre></div>
-</td></tr></table>
+                  <h1>Promise</h1>
+                
+                
                 
                   
                 
@@ -562,7 +437,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../controllers/" title="Controllers" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../listener_list/" title="ListenerList" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -571,19 +446,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Controllers
+                ListenerList
               </span>
             </div>
           </a>
         
         
-          <a href="../execution_model/" title="Execution Model" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../string_util/" title="StringUtil" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Execution Model
+                StringUtil
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -606,7 +481,7 @@
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/Sleitnick/AeroGameFramework" class="md-footer-social__link fa fa-github"></a>
     
@@ -618,9 +493,9 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
   </body>

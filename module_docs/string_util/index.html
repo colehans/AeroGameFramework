@@ -1,0 +1,945 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation for the AeroGameFramework">
+      
+      
+        <link rel="canonical" href="https://github.com/Sleitnick/AeroGameFramework/module_docs/string_util/">
+      
+      
+        <meta name="author" content="Stephen Leitnick">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/logo_32.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+    
+    
+      
+        <title>StringUtil - AeroGameFramework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#trimstring-str" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/Sleitnick/AeroGameFramework" title="AeroGameFramework" class="md-header-nav__button md-logo">
+          
+            <img src="../../img/logo_64.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              AeroGameFramework
+            </span>
+            <span class="md-header-nav__topic">
+              
+                StringUtil
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://github.com/Sleitnick/AeroGameFramework" title="AeroGameFramework" class="md-nav__button md-logo">
+      
+        <img src="../../img/logo_64.png" width="48" height="48">
+      
+    </a>
+    AeroGameFramework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../install/" title="Install & Setup" class="md-nav__link">
+      Install & Setup
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../services/" title="Services" class="md-nav__link">
+      Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../controllers/" title="Controllers" class="md-nav__link">
+      Controllers
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/" title="Modules" class="md-nav__link">
+      Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../execution_model/" title="Execution Model" class="md-nav__link">
+      Execution Model
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      Module Docs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Module Docs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1" checked>
+    
+    <label class="md-nav__link" for="nav-7-1">
+      Shared Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        Shared Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../base64/" title="Base64" class="md-nav__link">
+      Base64
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../date/" title="Date" class="md-nav__link">
+      Date
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../event/" title="Event" class="md-nav__link">
+      Event
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../listener_list/" title="ListenerList" class="md-nav__link">
+      ListenerList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../promise/" title="Promise" class="md-nav__link">
+      Promise
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        StringUtil
+      </label>
+    
+    <a href="./" title="StringUtil" class="md-nav__link md-nav__link--active">
+      StringUtil
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trimstring-str" class="md-nav__link">
+    Trim(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trimstartstring-str" class="md-nav__link">
+    TrimStart(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trimendstring-str" class="md-nav__link">
+    TrimEnd(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equalsignorecasestring-str-string-compare" class="md-nav__link">
+    EqualsIgnoreCase(String str, String compare)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removewhitespacestring-str" class="md-nav__link">
+    RemoveWhitespace(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removeexcesswhitespacestring-str" class="md-nav__link">
+    RemoveExcessWhitespace(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endswithstring-str-string-endswith" class="md-nav__link">
+    EndsWith(String str, String endsWith)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#startswithstring-str-string-startswith" class="md-nav__link">
+    StartsWith(String str, String startsWith)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#containsstring-str-string-contains" class="md-nav__link">
+    Contains(String str, String contains)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tochararraystring-str" class="md-nav__link">
+    ToCharArray(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tobytearraystring-str" class="md-nav__link">
+    ToByteArray(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bytearraytostringtable-bytes" class="md-nav__link">
+    ByteArrayToString(Table bytes)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tocamelcasestring-str" class="md-nav__link">
+    ToCamelCase(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topascalcasestring-str" class="md-nav__link">
+    ToPascalCase(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tosnakecasestring-str-uppercase" class="md-nav__link">
+    ToSnakeCase(String str [, uppercase])
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokebabcasestring-str-uppercase" class="md-nav__link">
+    ToKebabCase(String str [, uppercase])
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escapestr" class="md-nav__link">
+    Escape(str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stringbuilder" class="md-nav__link">
+    StringBuilder()
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../table_util/" title="TableUtil" class="md-nav__link">
+      TableUtil
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../thread/" title="Thread" class="md-nav__link">
+      Thread
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trimstring-str" class="md-nav__link">
+    Trim(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trimstartstring-str" class="md-nav__link">
+    TrimStart(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trimendstring-str" class="md-nav__link">
+    TrimEnd(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equalsignorecasestring-str-string-compare" class="md-nav__link">
+    EqualsIgnoreCase(String str, String compare)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removewhitespacestring-str" class="md-nav__link">
+    RemoveWhitespace(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removeexcesswhitespacestring-str" class="md-nav__link">
+    RemoveExcessWhitespace(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endswithstring-str-string-endswith" class="md-nav__link">
+    EndsWith(String str, String endsWith)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#startswithstring-str-string-startswith" class="md-nav__link">
+    StartsWith(String str, String startsWith)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#containsstring-str-string-contains" class="md-nav__link">
+    Contains(String str, String contains)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tochararraystring-str" class="md-nav__link">
+    ToCharArray(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tobytearraystring-str" class="md-nav__link">
+    ToByteArray(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bytearraytostringtable-bytes" class="md-nav__link">
+    ByteArrayToString(Table bytes)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tocamelcasestring-str" class="md-nav__link">
+    ToCamelCase(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topascalcasestring-str" class="md-nav__link">
+    ToPascalCase(String str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tosnakecasestring-str-uppercase" class="md-nav__link">
+    ToSnakeCase(String str [, uppercase])
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokebabcasestring-str-uppercase" class="md-nav__link">
+    ToKebabCase(String str [, uppercase])
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escapestr" class="md-nav__link">
+    Escape(str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stringbuilder" class="md-nav__link">
+    StringBuilder()
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>StringUtil</h1>
+                
+                <p>The StringUtil module provides utility functions for Lua strings.</p>
+<hr />
+<h3 id="trimstring-str"><code>Trim(String str)</code><a class="headerlink" href="#trimstring-str" title="Permanent link">&para;</a></h3>
+<p>Trims whitespace from the start and end of the string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">Trim</span><span class="p">(</span><span class="s2">&quot;  hello world  &quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;hello world&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="trimstartstring-str"><code>TrimStart(String str)</code><a class="headerlink" href="#trimstartstring-str" title="Permanent link">&para;</a></h3>
+<p>The same as Trim, but only trims the start of the string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">TrimStart</span><span class="p">(</span><span class="s2">&quot;  hello world  &quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;hello world  &quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="trimendstring-str"><code>TrimEnd(String str)</code><a class="headerlink" href="#trimendstring-str" title="Permanent link">&para;</a></h3>
+<p>The same as Trim, but only trims the end of the string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">TrimEnd</span><span class="p">(</span><span class="s2">&quot;  hello world  &quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;  hello world&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="equalsignorecasestring-str-string-compare"><code>EqualsIgnoreCase(String str, String compare)</code><a class="headerlink" href="#equalsignorecasestring-str-string-compare" title="Permanent link">&para;</a></h3>
+<p>Checks if two strings are equal, but ignores their case.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">EqualsIgnoreCase</span><span class="p">(</span><span class="s2">&quot;HELLo woRLD&quot;</span><span class="p">,</span> <span class="s2">&quot;hEllo wORLd&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">true</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="removewhitespacestring-str"><code>RemoveWhitespace(String str)</code><a class="headerlink" href="#removewhitespacestring-str" title="Permanent link">&para;</a></h3>
+<p>Removes all whitespace from a string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">RemoveWhitespace</span><span class="p">(</span><span class="s2">&quot;  hello World!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;helloWorld!&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="removeexcesswhitespacestring-str"><code>RemoveExcessWhitespace(String str)</code><a class="headerlink" href="#removeexcesswhitespacestring-str" title="Permanent link">&para;</a></h3>
+<p>Replaces all whitespace with a single space. This does not trim the string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">RemoveExcessWhitespace</span><span class="p">(</span><span class="s2">&quot;This     is    a   </span><span class="se">\n</span><span class="s2">  test&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;This is a test&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="endswithstring-str-string-endswith"><code>EndsWith(String str, String endsWith)</code><a class="headerlink" href="#endswithstring-str-string-endswith" title="Permanent link">&para;</a></h3>
+<p>Checks if a string ends with a certain string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">EndsWith</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="s2">&quot;rld&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">true</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="startswithstring-str-string-startswith"><code>StartsWith(String str, String startsWith)</code><a class="headerlink" href="#startswithstring-str-string-startswith" title="Permanent link">&para;</a></h3>
+<p>Checks if a string starts with a certain string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">StartsWith</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="s2">&quot;He&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">true</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="containsstring-str-string-contains"><code>Contains(String str, String contains)</code><a class="headerlink" href="#containsstring-str-string-contains" title="Permanent link">&para;</a></h3>
+<p>Checks if a string contains another string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="s2">&quot;lo wor&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">true</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="tochararraystring-str"><code>ToCharArray(String str)</code><a class="headerlink" href="#tochararraystring-str" title="Permanent link">&para;</a></h3>
+<p>Returns a table of all the characters in the string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">ToCharArray</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span> <span class="o">&gt;&gt;&gt;</span> <span class="p">{</span><span class="s2">&quot;H&quot;</span><span class="p">,</span><span class="s2">&quot;e&quot;</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">,</span><span class="s2">&quot;o&quot;</span><span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="tobytearraystring-str"><code>ToByteArray(String str)</code><a class="headerlink" href="#tobytearraystring-str" title="Permanent link">&para;</a></h3>
+<p>Returns a table of all the bytes of each character in the string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">ToByteArray</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span> <span class="o">&gt;&gt;&gt;</span> <span class="p">{</span><span class="mi">72</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">108</span><span class="p">,</span><span class="mi">108</span><span class="p">,</span><span class="mi">111</span><span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="bytearraytostringtable-bytes"><code>ByteArrayToString(Table bytes)</code><a class="headerlink" href="#bytearraytostringtable-bytes" title="Permanent link">&para;</a></h3>
+<p>Transforms an array of bytes into a string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">ByteArrayToString</span><span class="p">({</span><span class="mi">97</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">99</span><span class="p">})</span> <span class="o">==</span> <span class="s2">&quot;abc&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="tocamelcasestring-str"><code>ToCamelCase(String str)</code><a class="headerlink" href="#tocamelcasestring-str" title="Permanent link">&para;</a></h3>
+<p>Returns a string in camelCase.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">ToCamelCase</span><span class="p">(</span><span class="s2">&quot;Hello_world-abc&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;helloWorldAbc&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="topascalcasestring-str"><code>ToPascalCase(String str)</code><a class="headerlink" href="#topascalcasestring-str" title="Permanent link">&para;</a></h3>
+<p>Returns a string in PascalCase.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">ToPascalCase</span><span class="p">(</span><span class="s2">&quot;Hello_world-abc&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;HelloWorldAbc&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="tosnakecasestring-str-uppercase"><code>ToSnakeCase(String str [, uppercase])</code><a class="headerlink" href="#tosnakecasestring-str-uppercase" title="Permanent link">&para;</a></h3>
+<p>Returns a string in snake_case or SNAKE_CASE.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">ToPascalCase</span><span class="p">(</span><span class="s2">&quot;Hello_world-abc&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;hello_world_abc&quot;</span>
+<span class="n">StringUtil</span><span class="p">.</span><span class="n">ToPascalCase</span><span class="p">(</span><span class="s2">&quot;Hello_world-abc&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;HELLO_WORLD_ABC&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="tokebabcasestring-str-uppercase"><code>ToKebabCase(String str [, uppercase])</code><a class="headerlink" href="#tokebabcasestring-str-uppercase" title="Permanent link">&para;</a></h3>
+<p>Returns a string in kebab-case or KEBAB-CASE.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">ToKebabCase</span><span class="p">(</span><span class="s2">&quot;Hello_world-abc&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;hello-world-abc&quot;</span>
+<span class="n">StringUtil</span><span class="p">.</span><span class="n">ToKebabCase</span><span class="p">(</span><span class="s2">&quot;Hello_world-abc&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;HELLO-WORLD-ABC&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="escapestr"><code>Escape(str)</code><a class="headerlink" href="#escapestr" title="Permanent link">&para;</a></h3>
+<p>Escapes a string from pattern characters. In other words, it prefixes
+any special pattern characters with a %. For example, the dollar
+sign $ would become %$. See the example below.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">StringUtil</span><span class="p">.</span><span class="n">Escape</span><span class="p">(</span><span class="s2">&quot;Hello. World$ ^-^&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello%. World%$ %^%-%^&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="stringbuilder"><code>StringBuilder()</code><a class="headerlink" href="#stringbuilder" title="Permanent link">&para;</a></h3>
+<p>Creates a StringBuilder object that can be used to build a string. This
+is useful when a large string needs to be concatenated. Traditional
+concatenation of a string using ".." can be a performance issue, and thus
+StringBuilders can be used to store the pieces of the string in a table
+and then concatenate them all at once.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">StringUtil</span><span class="p">.</span><span class="n">StringBuilder</span><span class="p">()</span>
+
+<span class="n">builder</span><span class="p">:</span><span class="n">Append</span><span class="p">(</span><span class="s2">&quot;world&quot;</span><span class="p">)</span>
+<span class="n">builder</span><span class="p">:</span><span class="n">Prepend</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span><span class="p">)</span>
+<span class="n">builder</span><span class="p">:</span><span class="n">ToString</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Hello world&quot;</span>
+<span class="nb">tostring</span><span class="p">(</span><span class="n">builder</span><span class="p">)</span>  <span class="o">==</span> <span class="s2">&quot;Hello world&quot;</span>
+</pre></div>
+</td></tr></table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../promise/" title="Promise" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Promise
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../table_util/" title="TableUtil" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                TableUtil
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/Sleitnick/AeroGameFramework" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
