@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for the AeroGameFramework">
       
       
-        <link rel="canonical" href="https://sleitnick.github.io/AeroGameFramework/module_docs/server_services/store_service/">
+        <link rel="canonical" href="https://sleitnick.github.io/AeroGameFramework/module_docs/client_controllers/user_inputs/mobile/">
       
       
         <meta name="author" content="Stephen Leitnick">
@@ -37,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../img/logo_32.png">
+      <link rel="shortcut icon" href="../../../../img/logo_32.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
-        <title>StoreService - AeroGameFramework</title>
+        <title>Mobile - AeroGameFramework</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -66,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
     
     
     
@@ -89,6 +89,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#obtain-mobile" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -96,7 +100,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://sleitnick.github.io/AeroGameFramework/" title="AeroGameFramework" class="md-header-nav__button md-logo">
           
-            <img src="../../../img/logo_64.png" width="24" height="24">
+            <img src="../../../../img/logo_64.png" width="24" height="24">
           
         </a>
       </div>
@@ -111,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                StoreService
+                Mobile
               
             </span>
           
@@ -166,7 +170,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://sleitnick.github.io/AeroGameFramework/" title="AeroGameFramework" class="md-nav__button md-logo">
       
-        <img src="../../../img/logo_64.png" width="48" height="48">
+        <img src="../../../../img/logo_64.png" width="48" height="48">
       
     </a>
     AeroGameFramework
@@ -180,7 +184,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Home" class="md-nav__link">
+    <a href="../../../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -192,7 +196,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../install/" title="Install & Setup" class="md-nav__link">
+    <a href="../../../../install/" title="Install & Setup" class="md-nav__link">
       Install & Setup
     </a>
   </li>
@@ -204,7 +208,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../services/" title="Services" class="md-nav__link">
+    <a href="../../../../services/" title="Services" class="md-nav__link">
       Services
     </a>
   </li>
@@ -216,7 +220,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../controllers/" title="Controllers" class="md-nav__link">
+    <a href="../../../../controllers/" title="Controllers" class="md-nav__link">
       Controllers
     </a>
   </li>
@@ -228,7 +232,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../modules/" title="Modules" class="md-nav__link">
+    <a href="../../../../modules/" title="Modules" class="md-nav__link">
       Modules
     </a>
   </li>
@@ -240,7 +244,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../execution_model/" title="Execution Model" class="md-nav__link">
+    <a href="../../../../execution_model/" title="Execution Model" class="md-nav__link">
       Execution Model
     </a>
   </li>
@@ -271,12 +275,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
     
     <label class="md-nav__link" for="nav-7-1">
       Server
@@ -292,12 +294,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1-1" type="checkbox" id="nav-7-1-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1-1" type="checkbox" id="nav-7-1-1">
     
     <label class="md-nav__link" for="nav-7-1-1">
       Services
@@ -313,18 +313,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="StoreService" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../server_services/store_service/" title="StoreService" class="md-nav__link">
       StoreService
     </a>
-    
   </li>
 
         
@@ -358,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../server_modules/data/" title="Data" class="md-nav__link">
+    <a href="../../../server_modules/data/" title="Data" class="md-nav__link">
       Data
     </a>
   </li>
@@ -378,10 +371,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2" checked>
     
     <label class="md-nav__link" for="nav-7-2">
       Client
@@ -397,10 +392,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2-1" type="checkbox" id="nav-7-2-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2-1" type="checkbox" id="nav-7-2-1" checked>
     
     <label class="md-nav__link" for="nav-7-2-1">
       Controllers
@@ -418,7 +415,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_controllers/user_input/" title="UserInput" class="md-nav__link">
+    <a href="../../user_input/" title="UserInput" class="md-nav__link">
       UserInput
     </a>
   </li>
@@ -428,10 +425,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2-1-2" type="checkbox" id="nav-7-2-1-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2-1-2" type="checkbox" id="nav-7-2-1-2" checked>
     
     <label class="md-nav__link" for="nav-7-2-1-2">
       UserInput (modules)
@@ -449,7 +448,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_controllers/user_inputs/mouse/" title="Mouse" class="md-nav__link">
+    <a href="../mouse/" title="Mouse" class="md-nav__link">
       Mouse
     </a>
   </li>
@@ -461,7 +460,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_controllers/user_inputs/keyboard/" title="Keyboard" class="md-nav__link">
+    <a href="../keyboard/" title="Keyboard" class="md-nav__link">
       Keyboard
     </a>
   </li>
@@ -473,7 +472,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_controllers/user_inputs/gamepad/" title="Gamepad" class="md-nav__link">
+    <a href="../gamepad/" title="Gamepad" class="md-nav__link">
       Gamepad
     </a>
   </li>
@@ -483,11 +482,93 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../client_controllers/user_inputs/mobile/" title="Mobile" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Mobile
+      </label>
+    
+    <a href="./" title="Mobile" class="md-nav__link md-nav__link--active">
       Mobile
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obtain-mobile" class="md-nav__link">
+    Obtain Mobile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#touchstarted" class="md-nav__link">
+    TouchStarted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchended" class="md-nav__link">
+    TouchEnded
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchmoved" class="md-nav__link">
+    TouchMoved
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchtapinworld" class="md-nav__link">
+    TouchTapInWorld
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchpinch" class="md-nav__link">
+    TouchPinch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -502,7 +583,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_controllers/fade/" title="Fade" class="md-nav__link">
+    <a href="../../fade/" title="Fade" class="md-nav__link">
       Fade
     </a>
   </li>
@@ -514,7 +595,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_controllers/task_scheduler/" title="TaskScheduler" class="md-nav__link">
+    <a href="../../task_scheduler/" title="TaskScheduler" class="md-nav__link">
       TaskScheduler
     </a>
   </li>
@@ -550,7 +631,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_modules/camera_shaker/" title="CameraShaker" class="md-nav__link">
+    <a href="../../../client_modules/camera_shaker/" title="CameraShaker" class="md-nav__link">
       CameraShaker
     </a>
   </li>
@@ -562,7 +643,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_modules/smooth/" title="Smooth" class="md-nav__link">
+    <a href="../../../client_modules/smooth/" title="Smooth" class="md-nav__link">
       Smooth
     </a>
   </li>
@@ -574,7 +655,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_modules/tween/" title="Tween" class="md-nav__link">
+    <a href="../../../client_modules/tween/" title="Tween" class="md-nav__link">
       Tween
     </a>
   </li>
@@ -586,7 +667,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_modules/pid/" title="PID" class="md-nav__link">
+    <a href="../../../client_modules/pid/" title="PID" class="md-nav__link">
       PID
     </a>
   </li>
@@ -627,7 +708,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/base64/" title="Base64" class="md-nav__link">
+    <a href="../../../shared/base64/" title="Base64" class="md-nav__link">
       Base64
     </a>
   </li>
@@ -639,7 +720,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/date/" title="Date" class="md-nav__link">
+    <a href="../../../shared/date/" title="Date" class="md-nav__link">
       Date
     </a>
   </li>
@@ -651,7 +732,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/event/" title="Event" class="md-nav__link">
+    <a href="../../../shared/event/" title="Event" class="md-nav__link">
       Event
     </a>
   </li>
@@ -663,7 +744,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/listener_list/" title="ListenerList" class="md-nav__link">
+    <a href="../../../shared/listener_list/" title="ListenerList" class="md-nav__link">
       ListenerList
     </a>
   </li>
@@ -675,7 +756,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/promise/" title="Promise" class="md-nav__link">
+    <a href="../../../shared/promise/" title="Promise" class="md-nav__link">
       Promise
     </a>
   </li>
@@ -687,7 +768,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/string_util/" title="StringUtil" class="md-nav__link">
+    <a href="../../../shared/string_util/" title="StringUtil" class="md-nav__link">
       StringUtil
     </a>
   </li>
@@ -699,7 +780,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/table_util/" title="TableUtil" class="md-nav__link">
+    <a href="../../../shared/table_util/" title="TableUtil" class="md-nav__link">
       TableUtil
     </a>
   </li>
@@ -711,7 +792,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/thread/" title="Thread" class="md-nav__link">
+    <a href="../../../shared/thread/" title="Thread" class="md-nav__link">
       Thread
     </a>
   </li>
@@ -734,15 +815,153 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obtain-mobile" class="md-nav__link">
+    Obtain Mobile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#touchstarted" class="md-nav__link">
+    TouchStarted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchended" class="md-nav__link">
+    TouchEnded
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchmoved" class="md-nav__link">
+    TouchMoved
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchtapinworld" class="md-nav__link">
+    TouchTapInWorld
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchpinch" class="md-nav__link">
+    TouchPinch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>StoreService</h1>
+                  <h1>Mobile</h1>
                 
-                <p>Coming soon</p>
+                <p>The Mobile module exposes events related to mobile input.</p>
+<hr />
+<h2 id="obtain-mobile">Obtain Mobile<a class="headerlink" href="#obtain-mobile" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">mobile</span> <span class="o">=</span> <span class="n">userInput</span><span class="p">:</span><span class="n">Get</span><span class="p">(</span><span class="s2">&quot;Mobile&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<h3 id="touchstarted"><code>TouchStarted</code><a class="headerlink" href="#touchstarted" title="Permanent link">&para;</a></h3>
+<p>Fires when a touch is started.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">mobile</span><span class="p">.</span><span class="n">TouchStarted</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">screenPosition</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;TouchStarted&quot;</span><span class="p">,</span> <span class="n">screenPosition</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="touchended"><code>TouchEnded</code><a class="headerlink" href="#touchended" title="Permanent link">&para;</a></h3>
+<p>Fires when a touch ends.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">mobile</span><span class="p">.</span><span class="n">TouchEnded</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">screenPosition</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;TouchEnded&quot;</span><span class="p">,</span> <span class="n">screenPosition</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="touchmoved"><code>TouchMoved</code><a class="headerlink" href="#touchmoved" title="Permanent link">&para;</a></h3>
+<p>Fires when a touch moves.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">mobile</span><span class="p">.</span><span class="n">TouchMoved</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">screenPosition</span><span class="p">,</span> <span class="n">deltaPosition</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;TouchMoved&quot;</span><span class="p">,</span> <span class="n">screenPosition</span><span class="p">,</span> <span class="n">deltaPosition</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="touchtapinworld"><code>TouchTapInWorld</code><a class="headerlink" href="#touchtapinworld" title="Permanent link">&para;</a></h3>
+<p>Fires when a touch tap is registered in the 3D world.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">mobile</span><span class="p">.</span><span class="n">TouchTapInWorld</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;TouchTapInWorld&quot;</span><span class="p">,</span> <span class="n">position</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="touchpinch"><code>TouchPinch</code><a class="headerlink" href="#touchpinch" title="Permanent link">&para;</a></h3>
+<p>Fires when a touch pinch is registered.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">mobile</span><span class="p">.</span><span class="n">TouchPinch</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">scale</span><span class="p">,</span> <span class="n">userInputState</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;TouchPinch&quot;</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">userInputState</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
                 
                   
                 
@@ -763,7 +982,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../../execution_model/" title="Execution Model" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../gamepad/" title="Gamepad" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -772,19 +991,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Execution Model
+                Gamepad
               </span>
             </div>
           </a>
         
         
-          <a href="../../server_modules/data/" title="Data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../fade/" title="Fade" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Data
+                Fade
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -807,7 +1026,7 @@
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../../../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/Sleitnick/AeroGameFramework" class="md-footer-social__link fa fa-github"></a>
     
@@ -819,9 +1038,9 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../../../assets/javascripts/application.ac79c3b0.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
       
     
   </body>

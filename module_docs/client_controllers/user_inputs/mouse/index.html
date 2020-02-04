@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for the AeroGameFramework">
       
       
-        <link rel="canonical" href="https://sleitnick.github.io/AeroGameFramework/module_docs/client_controllers/fade/">
+        <link rel="canonical" href="https://sleitnick.github.io/AeroGameFramework/module_docs/client_controllers/user_inputs/mouse/">
       
       
         <meta name="author" content="Stephen Leitnick">
@@ -37,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../img/logo_32.png">
+      <link rel="shortcut icon" href="../../../../img/logo_32.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
-        <title>Fade - AeroGameFramework</title>
+        <title>Mouse - AeroGameFramework</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -66,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
     
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#methods" tabindex="1" class="md-skip">
+      <a href="#obtain-mouse" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -100,7 +100,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://sleitnick.github.io/AeroGameFramework/" title="AeroGameFramework" class="md-header-nav__button md-logo">
           
-            <img src="../../../img/logo_64.png" width="24" height="24">
+            <img src="../../../../img/logo_64.png" width="24" height="24">
           
         </a>
       </div>
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Fade
+                Mouse
               
             </span>
           
@@ -170,7 +170,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://sleitnick.github.io/AeroGameFramework/" title="AeroGameFramework" class="md-nav__button md-logo">
       
-        <img src="../../../img/logo_64.png" width="48" height="48">
+        <img src="../../../../img/logo_64.png" width="48" height="48">
       
     </a>
     AeroGameFramework
@@ -184,7 +184,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Home" class="md-nav__link">
+    <a href="../../../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -196,7 +196,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../install/" title="Install & Setup" class="md-nav__link">
+    <a href="../../../../install/" title="Install & Setup" class="md-nav__link">
       Install & Setup
     </a>
   </li>
@@ -208,7 +208,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../services/" title="Services" class="md-nav__link">
+    <a href="../../../../services/" title="Services" class="md-nav__link">
       Services
     </a>
   </li>
@@ -220,7 +220,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../controllers/" title="Controllers" class="md-nav__link">
+    <a href="../../../../controllers/" title="Controllers" class="md-nav__link">
       Controllers
     </a>
   </li>
@@ -232,7 +232,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../modules/" title="Modules" class="md-nav__link">
+    <a href="../../../../modules/" title="Modules" class="md-nav__link">
       Modules
     </a>
   </li>
@@ -244,7 +244,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../execution_model/" title="Execution Model" class="md-nav__link">
+    <a href="../../../../execution_model/" title="Execution Model" class="md-nav__link">
       Execution Model
     </a>
   </li>
@@ -315,7 +315,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../server_services/store_service/" title="StoreService" class="md-nav__link">
+    <a href="../../../server_services/store_service/" title="StoreService" class="md-nav__link">
       StoreService
     </a>
   </li>
@@ -351,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../server_modules/data/" title="Data" class="md-nav__link">
+    <a href="../../../server_modules/data/" title="Data" class="md-nav__link">
       Data
     </a>
   </li>
@@ -415,7 +415,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user_input/" title="UserInput" class="md-nav__link">
+    <a href="../../user_input/" title="UserInput" class="md-nav__link">
       UserInput
     </a>
   </li>
@@ -425,10 +425,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2-1-2" type="checkbox" id="nav-7-2-1-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2-1-2" type="checkbox" id="nav-7-2-1-2" checked>
     
     <label class="md-nav__link" for="nav-7-2-1-2">
       UserInput (modules)
@@ -444,59 +446,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../user_inputs/mouse/" title="Mouse" class="md-nav__link">
-      Mouse
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../user_inputs/keyboard/" title="Keyboard" class="md-nav__link">
-      Keyboard
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../user_inputs/gamepad/" title="Gamepad" class="md-nav__link">
-      Gamepad
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../user_inputs/mobile/" title="Mobile" class="md-nav__link">
-      Mobile
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -506,11 +455,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Fade
+        Mouse
       </label>
     
-    <a href="./" title="Fade" class="md-nav__link md-nav__link--active">
-      Fade
+    <a href="./" title="Mouse" class="md-nav__link md-nav__link--active">
+      Mouse
     </a>
     
       
@@ -522,6 +471,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#obtain-mouse" class="md-nav__link">
+    Obtain Mouse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     Methods
   </a>
@@ -530,99 +486,168 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#innumber-duration-boolean-async" class="md-nav__link">
-    In([Number duration [, Boolean async]])
+  <a href="#getposition" class="md-nav__link">
+    GetPosition()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#outnumber-duration-boolean-async" class="md-nav__link">
-    Out([Number duration [, Boolean async]])
+  <a href="#getdelta" class="md-nav__link">
+    GetDelta()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#tonumber-transparency-number-duration-boolean-async" class="md-nav__link">
-    To(Number transparency [, Number duration [, Boolean async]])
+  <a href="#lock" class="md-nav__link">
+    Lock()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#fromtonumber-from-number-to-number-dur-boolean-async" class="md-nav__link">
-    FromTo(Number from, Number to [, Number dur [, Boolean async]])
+  <a href="#lockcenter" class="md-nav__link">
+    LockCenter()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#settextstring-text" class="md-nav__link">
-    SetText(String text)
+  <a href="#unlock" class="md-nav__link">
+    Unlock()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#cleartext" class="md-nav__link">
-    ClearText()
+  <a href="#getraydistance" class="md-nav__link">
+    GetRay(distance)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#settextsizenumber-textsize" class="md-nav__link">
-    SetTextSize(Number textSize)
+  <a href="#getrayfromxyx-y" class="md-nav__link">
+    GetRayFromXY(x, y)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setfontfont-font" class="md-nav__link">
-    SetFont(Font font)
+  <a href="#setmouseiconiconid" class="md-nav__link">
+    SetMouseIcon(iconId)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setbackgroundcolorcolor3-color" class="md-nav__link">
-    SetBackgroundColor(Color3 color)
+  <a href="#setmouseiconenabledisenabled" class="md-nav__link">
+    SetMouseIconEnabled(isEnabled)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#settextcolorcolor3-color" class="md-nav__link">
-    SetTextColor(Color3 color)
+  <a href="#ismouseiconenabled" class="md-nav__link">
+    IsMouseIconEnabled()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#seteasingstyleeasingstyle-easingstyle" class="md-nav__link">
-    SetEasingStyle(EasingStyle easingStyle)
+  <a href="#isbuttonpressedmousebutton" class="md-nav__link">
+    IsButtonPressed(mouseButton)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getscreengui" class="md-nav__link">
-    GetScreenGui()
+  <a href="#castignoreinstance-terraincellsarecubes-ignorewater" class="md-nav__link">
+    Cast(ignoreInstance, terrainCellsAreCubes, ignoreWater)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getframe" class="md-nav__link">
-    GetFrame()
+  <a href="#castwithignorelistignoretbl-terraincellsarecubes-ignorewater" class="md-nav__link">
+    CastWithIgnoreList(ignoreTbl, terrainCellsAreCubes, ignoreWater)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getlabel" class="md-nav__link">
-    GetLabel()
+  <a href="#castwithwhitelistwhitelisttbl-terraincellsarecubes-ignorewater" class="md-nav__link">
+    CastWithWhitelist(whitelistTbl, terrainCellsAreCubes, ignoreWater)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#leftdown" class="md-nav__link">
+    LeftDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leftup" class="md-nav__link">
+    LeftUp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightdown" class="md-nav__link">
+    RightDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightup" class="md-nav__link">
+    RightUp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#middledown" class="md-nav__link">
+    MiddleDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#middleup" class="md-nav__link">
+    MiddleUp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moved" class="md-nav__link">
+    Moved
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrolled" class="md-nav__link">
+    Scrolled
   </a>
   
 </li>
@@ -649,7 +674,60 @@
 
 
   <li class="md-nav__item">
-    <a href="../task_scheduler/" title="TaskScheduler" class="md-nav__link">
+    <a href="../keyboard/" title="Keyboard" class="md-nav__link">
+      Keyboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gamepad/" title="Gamepad" class="md-nav__link">
+      Gamepad
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mobile/" title="Mobile" class="md-nav__link">
+      Mobile
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fade/" title="Fade" class="md-nav__link">
+      Fade
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../task_scheduler/" title="TaskScheduler" class="md-nav__link">
       TaskScheduler
     </a>
   </li>
@@ -685,7 +763,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_modules/camera_shaker/" title="CameraShaker" class="md-nav__link">
+    <a href="../../../client_modules/camera_shaker/" title="CameraShaker" class="md-nav__link">
       CameraShaker
     </a>
   </li>
@@ -697,7 +775,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_modules/smooth/" title="Smooth" class="md-nav__link">
+    <a href="../../../client_modules/smooth/" title="Smooth" class="md-nav__link">
       Smooth
     </a>
   </li>
@@ -709,7 +787,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_modules/tween/" title="Tween" class="md-nav__link">
+    <a href="../../../client_modules/tween/" title="Tween" class="md-nav__link">
       Tween
     </a>
   </li>
@@ -721,7 +799,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../client_modules/pid/" title="PID" class="md-nav__link">
+    <a href="../../../client_modules/pid/" title="PID" class="md-nav__link">
       PID
     </a>
   </li>
@@ -762,7 +840,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/base64/" title="Base64" class="md-nav__link">
+    <a href="../../../shared/base64/" title="Base64" class="md-nav__link">
       Base64
     </a>
   </li>
@@ -774,7 +852,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/date/" title="Date" class="md-nav__link">
+    <a href="../../../shared/date/" title="Date" class="md-nav__link">
       Date
     </a>
   </li>
@@ -786,7 +864,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/event/" title="Event" class="md-nav__link">
+    <a href="../../../shared/event/" title="Event" class="md-nav__link">
       Event
     </a>
   </li>
@@ -798,7 +876,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/listener_list/" title="ListenerList" class="md-nav__link">
+    <a href="../../../shared/listener_list/" title="ListenerList" class="md-nav__link">
       ListenerList
     </a>
   </li>
@@ -810,7 +888,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/promise/" title="Promise" class="md-nav__link">
+    <a href="../../../shared/promise/" title="Promise" class="md-nav__link">
       Promise
     </a>
   </li>
@@ -822,7 +900,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/string_util/" title="StringUtil" class="md-nav__link">
+    <a href="../../../shared/string_util/" title="StringUtil" class="md-nav__link">
       StringUtil
     </a>
   </li>
@@ -834,7 +912,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/table_util/" title="TableUtil" class="md-nav__link">
+    <a href="../../../shared/table_util/" title="TableUtil" class="md-nav__link">
       TableUtil
     </a>
   </li>
@@ -846,7 +924,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/thread/" title="Thread" class="md-nav__link">
+    <a href="../../../shared/thread/" title="Thread" class="md-nav__link">
       Thread
     </a>
   </li>
@@ -881,6 +959,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#obtain-mouse" class="md-nav__link">
+    Obtain Mouse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     Methods
   </a>
@@ -889,99 +974,168 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#innumber-duration-boolean-async" class="md-nav__link">
-    In([Number duration [, Boolean async]])
+  <a href="#getposition" class="md-nav__link">
+    GetPosition()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#outnumber-duration-boolean-async" class="md-nav__link">
-    Out([Number duration [, Boolean async]])
+  <a href="#getdelta" class="md-nav__link">
+    GetDelta()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#tonumber-transparency-number-duration-boolean-async" class="md-nav__link">
-    To(Number transparency [, Number duration [, Boolean async]])
+  <a href="#lock" class="md-nav__link">
+    Lock()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#fromtonumber-from-number-to-number-dur-boolean-async" class="md-nav__link">
-    FromTo(Number from, Number to [, Number dur [, Boolean async]])
+  <a href="#lockcenter" class="md-nav__link">
+    LockCenter()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#settextstring-text" class="md-nav__link">
-    SetText(String text)
+  <a href="#unlock" class="md-nav__link">
+    Unlock()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#cleartext" class="md-nav__link">
-    ClearText()
+  <a href="#getraydistance" class="md-nav__link">
+    GetRay(distance)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#settextsizenumber-textsize" class="md-nav__link">
-    SetTextSize(Number textSize)
+  <a href="#getrayfromxyx-y" class="md-nav__link">
+    GetRayFromXY(x, y)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setfontfont-font" class="md-nav__link">
-    SetFont(Font font)
+  <a href="#setmouseiconiconid" class="md-nav__link">
+    SetMouseIcon(iconId)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setbackgroundcolorcolor3-color" class="md-nav__link">
-    SetBackgroundColor(Color3 color)
+  <a href="#setmouseiconenabledisenabled" class="md-nav__link">
+    SetMouseIconEnabled(isEnabled)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#settextcolorcolor3-color" class="md-nav__link">
-    SetTextColor(Color3 color)
+  <a href="#ismouseiconenabled" class="md-nav__link">
+    IsMouseIconEnabled()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#seteasingstyleeasingstyle-easingstyle" class="md-nav__link">
-    SetEasingStyle(EasingStyle easingStyle)
+  <a href="#isbuttonpressedmousebutton" class="md-nav__link">
+    IsButtonPressed(mouseButton)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getscreengui" class="md-nav__link">
-    GetScreenGui()
+  <a href="#castignoreinstance-terraincellsarecubes-ignorewater" class="md-nav__link">
+    Cast(ignoreInstance, terrainCellsAreCubes, ignoreWater)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getframe" class="md-nav__link">
-    GetFrame()
+  <a href="#castwithignorelistignoretbl-terraincellsarecubes-ignorewater" class="md-nav__link">
+    CastWithIgnoreList(ignoreTbl, terrainCellsAreCubes, ignoreWater)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getlabel" class="md-nav__link">
-    GetLabel()
+  <a href="#castwithwhitelistwhitelisttbl-terraincellsarecubes-ignorewater" class="md-nav__link">
+    CastWithWhitelist(whitelistTbl, terrainCellsAreCubes, ignoreWater)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#leftdown" class="md-nav__link">
+    LeftDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leftup" class="md-nav__link">
+    LeftUp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightdown" class="md-nav__link">
+    RightDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightup" class="md-nav__link">
+    RightUp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#middledown" class="md-nav__link">
+    MiddleDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#middleup" class="md-nav__link">
+    MiddleUp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moved" class="md-nav__link">
+    Moved
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrolled" class="md-nav__link">
+    Scrolled
   </a>
   
 </li>
@@ -1008,115 +1162,104 @@
               
                 
                 
-                  <h1>Fade</h1>
+                  <h1>Mouse</h1>
                 
-                <p>The Fade controller allows for easy and simple fade-in and fade-out effects on the screen.</p>
-<p>For most cases, using just the <code>In</code> and <code>Out</code> methods is enough.</p>
+                <p>The Mouse object represents a player's mouse and any associated inputs.</p>
+<hr />
+<h2 id="obtain-mouse">Obtain Mouse<a class="headerlink" href="#obtain-mouse" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">mouse</span> <span class="o">=</span> <span class="n">userInput</span><span class="p">:</span><span class="n">Get</span><span class="p">(</span><span class="s2">&quot;Mouse&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
-<h3 id="innumber-duration-boolean-async"><code>In([Number duration [, Boolean async]])</code><a class="headerlink" href="#innumber-duration-boolean-async" title="Permanent link">&para;</a></h3>
-<p>Fade in from black.</p>
+<h3 id="getposition"><code>GetPosition()</code><a class="headerlink" href="#getposition" title="Permanent link">&para;</a></h3>
+<p>Returns a Vector2 of the mouse's screen position.</p>
+<hr />
+<h3 id="getdelta"><code>GetDelta()</code><a class="headerlink" href="#getdelta" title="Permanent link">&para;</a></h3>
+<p>Returns a Vector2 of the mouse's delta position (i.e. change in position).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This only works if the mouse is locked. If not locked, it will return a zero-value Vector2.</p>
+</div>
+<hr />
+<h3 id="lock"><code>Lock()</code><a class="headerlink" href="#lock" title="Permanent link">&para;</a></h3>
+<p>Locks the mouse's position on-screen at its current location.</p>
+<hr />
+<h3 id="lockcenter"><code>LockCenter()</code><a class="headerlink" href="#lockcenter" title="Permanent link">&para;</a></h3>
+<p>Locks the mouse's position at the center of the screen.</p>
+<hr />
+<h3 id="unlock"><code>Unlock()</code><a class="headerlink" href="#unlock" title="Permanent link">&para;</a></h3>
+<p>Unlocks the mouse's position.</p>
+<hr />
+<h3 id="getraydistance"><code>GetRay(distance)</code><a class="headerlink" href="#getraydistance" title="Permanent link">&para;</a></h3>
+<p>Get a ray object from the mouse's position into the 3D world. This is mostly used internally for raycasting.</p>
+<hr />
+<h3 id="getrayfromxyx-y"><code>GetRayFromXY(x, y)</code><a class="headerlink" href="#getrayfromxyx-y" title="Permanent link">&para;</a></h3>
+<p>Get a ray object projecting from the XY screen position into the 3D world.</p>
+<hr />
+<h3 id="setmouseiconiconid"><code>SetMouseIcon(iconId)</code><a class="headerlink" href="#setmouseiconiconid" title="Permanent link">&para;</a></h3>
+<p>Set the mouse icon.</p>
+<hr />
+<h3 id="setmouseiconenabledisenabled"><code>SetMouseIconEnabled(isEnabled)</code><a class="headerlink" href="#setmouseiconenabledisenabled" title="Permanent link">&para;</a></h3>
+<p>Set whether or not the mouse icon is enabled.</p>
+<hr />
+<h3 id="ismouseiconenabled"><code>IsMouseIconEnabled()</code><a class="headerlink" href="#ismouseiconenabled" title="Permanent link">&para;</a></h3>
+<p>Returns <code>true|false</code> whether or not the mouse icon is enabled.</p>
+<hr />
+<h3 id="isbuttonpressedmousebutton"><code>IsButtonPressed(mouseButton)</code><a class="headerlink" href="#isbuttonpressedmousebutton" title="Permanent link">&para;</a></h3>
+<p>Returns <code>true|false</code> if the given mouse button is pressed (e.g. <code>Enum.UserInputType.MouseButton1</code>).</p>
+<hr />
+<h3 id="castignoreinstance-terraincellsarecubes-ignorewater"><code>Cast(ignoreInstance, terrainCellsAreCubes, ignoreWater)</code><a class="headerlink" href="#castignoreinstance-terraincellsarecubes-ignorewater" title="Permanent link">&para;</a></h3>
+<p>Performs a raycast operation from the mouse's position projected into the 3D world. Returns everything that <code>workspace:FindPartOnRay</code> returns (part, cframe, normal, material).</p>
+<hr />
+<h3 id="castwithignorelistignoretbl-terraincellsarecubes-ignorewater"><code>CastWithIgnoreList(ignoreTbl, terrainCellsAreCubes, ignoreWater)</code><a class="headerlink" href="#castwithignorelistignoretbl-terraincellsarecubes-ignorewater" title="Permanent link">&para;</a></h3>
+<p>The same as <code>Cast</code>, but with a given blacklist table.</p>
+<hr />
+<h3 id="castwithwhitelistwhitelisttbl-terraincellsarecubes-ignorewater"><code>CastWithWhitelist(whitelistTbl, terrainCellsAreCubes, ignoreWater)</code><a class="headerlink" href="#castwithwhitelistwhitelisttbl-terraincellsarecubes-ignorewater" title="Permanent link">&para;</a></h3>
+<p>The same as <code>Cast</code>, but with a given whitelist table.</p>
+<hr />
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<h3 id="leftdown"><code>LeftDown</code><a class="headerlink" href="#leftdown" title="Permanent link">&para;</a></h3>
+<p>The left button was pressed down.</p>
+<hr />
+<h3 id="leftup"><code>LeftUp</code><a class="headerlink" href="#leftup" title="Permanent link">&para;</a></h3>
+<p>The left button was released.</p>
+<hr />
+<h3 id="rightdown"><code>RightDown</code><a class="headerlink" href="#rightdown" title="Permanent link">&para;</a></h3>
+<p>The right button was pressed down.</p>
+<hr />
+<h3 id="rightup"><code>RightUp</code><a class="headerlink" href="#rightup" title="Permanent link">&para;</a></h3>
+<p>The right button was released.</p>
+<hr />
+<h3 id="middledown"><code>MiddleDown</code><a class="headerlink" href="#middledown" title="Permanent link">&para;</a></h3>
+<p>The middle button was pressed down.</p>
+<hr />
+<h3 id="middleup"><code>MiddleUp</code><a class="headerlink" href="#middleup" title="Permanent link">&para;</a></h3>
+<p>The middle button was released.</p>
+<hr />
+<h3 id="moved"><code>Moved</code><a class="headerlink" href="#moved" title="Permanent link">&para;</a></h3>
+<p>The mouse has moved.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">In</span><span class="p">()</span> <span class="c1">-- Fade in over 0.5 seconds</span>
-<span class="n">Fade</span><span class="p">:</span><span class="n">In</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span> <span class="c1">-- Fade in over 1.5 seconds)</span>
-<span class="n">Fade</span><span class="p">:</span><span class="n">In</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span> <span class="c1">-- Fade in asynchronously over 1.5 seconds</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">mouse</span><span class="p">.</span><span class="n">Moved</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The mouse moved&quot;</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
 <hr />
-<h3 id="outnumber-duration-boolean-async"><code>Out([Number duration [, Boolean async]])</code><a class="headerlink" href="#outnumber-duration-boolean-async" title="Permanent link">&para;</a></h3>
-<p>Fade out to black.</p>
+<h3 id="scrolled"><code>Scrolled</code><a class="headerlink" href="#scrolled" title="Permanent link">&para;</a></h3>
+<p>Mouse wheel scrolled. Passes the increment of scrolling performed.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">Out</span><span class="p">()</span> <span class="c1">-- Fade out over 0.5 seconds</span>
-<span class="n">Fade</span><span class="p">:</span><span class="n">Out</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span> <span class="c1">-- Fade out over 1.5 seconds)</span>
-<span class="n">Fade</span><span class="p">:</span><span class="n">Out</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span> <span class="c1">-- Fade out asynchronously over 1.5 seconds</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">mouse</span><span class="p">.</span><span class="n">Scrolled</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Scrolled&quot;</span><span class="p">,</span> <span class="n">amount</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
 <hr />
-<h3 id="tonumber-transparency-number-duration-boolean-async"><code>To(Number transparency [, Number duration [, Boolean async]])</code><a class="headerlink" href="#tonumber-transparency-number-duration-boolean-async" title="Permanent link">&para;</a></h3>
-<p>Fade to the given transparency, starting at whatever the current fade transparency is set.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">To</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span> <span class="c1">-- Fade to a transparency of 0.75 (75%)</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="fromtonumber-from-number-to-number-dur-boolean-async"><code>FromTo(Number from, Number to [, Number dur [, Boolean async]])</code><a class="headerlink" href="#fromtonumber-from-number-to-number-dur-boolean-async" title="Permanent link">&para;</a></h3>
-<p>Fade from one transparency level to another. This is also used internally by the <code>In</code> and <code>Out</code> fade methods.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">FromTo</span><span class="p">(</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span> <span class="c1">-- Fade from 0.75 to 0.25</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="settextstring-text"><code>SetText(String text)</code><a class="headerlink" href="#settextstring-text" title="Permanent link">&para;</a></h3>
-<p>Set the text that will show up in the center of the screen when the fade screen is visible.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">SetText</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="cleartext"><code>ClearText()</code><a class="headerlink" href="#cleartext" title="Permanent link">&para;</a></h3>
-<p>Clear the text on the fade screen.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">ClearText</span><span class="p">()</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="settextsizenumber-textsize"><code>SetTextSize(Number textSize)</code><a class="headerlink" href="#settextsizenumber-textsize" title="Permanent link">&para;</a></h3>
-<p>Set the text size for the fade screen label.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">SetTextSize</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="setfontfont-font"><code>SetFont(Font font)</code><a class="headerlink" href="#setfontfont-font" title="Permanent link">&para;</a></h3>
-<p>Set the font for the fade screen label.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">SetFont</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Highway</span><span class="p">)</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="setbackgroundcolorcolor3-color"><code>SetBackgroundColor(Color3 color)</code><a class="headerlink" href="#setbackgroundcolorcolor3-color" title="Permanent link">&para;</a></h3>
-<p>Sets the background color of the fade frame.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">SetBackgroundColor</span><span class="p">(</span><span class="n">Color3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="settextcolorcolor3-color"><code>SetTextColor(Color3 color)</code><a class="headerlink" href="#settextcolorcolor3-color" title="Permanent link">&para;</a></h3>
-<p>Sets the text color of the fade text label.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">SetBackgroundColor</span><span class="p">(</span><span class="n">Color3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="seteasingstyleeasingstyle-easingstyle"><code>SetEasingStyle(EasingStyle easingStyle)</code><a class="headerlink" href="#seteasingstyleeasingstyle-easingstyle" title="Permanent link">&para;</a></h3>
-<p>Sets the tween easing style for the fading effect. Defaults to Quad.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Fade</span><span class="p">:</span><span class="n">SetEasingStyle</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">EasingStyle</span><span class="p">.</span><span class="n">Quint</span><span class="p">)</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="getscreengui"><code>GetScreenGui()</code><a class="headerlink" href="#getscreengui" title="Permanent link">&para;</a></h3>
-<p>Returns the ScreenGui used by the Fade controller.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">gui</span> <span class="o">=</span> <span class="n">Fade</span><span class="p">:</span><span class="n">GetScreenGui</span><span class="p">()</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="getframe"><code>GetFrame()</code><a class="headerlink" href="#getframe" title="Permanent link">&para;</a></h3>
-<p>Returns the Frame used by the Fade controller.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">gui</span> <span class="o">=</span> <span class="n">Fade</span><span class="p">:</span><span class="n">GetFrame</span><span class="p">()</span>
-</pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="getlabel"><code>GetLabel()</code><a class="headerlink" href="#getlabel" title="Permanent link">&para;</a></h3>
-<p>Returns the TextLabel used by the Fade controller.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">gui</span> <span class="o">=</span> <span class="n">Fade</span><span class="p">:</span><span class="n">GetLabel</span><span class="p">()</span>
-</pre></div>
-</td></tr></table>
                 
                   
                 
@@ -1137,7 +1280,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../user_inputs/mobile/" title="Mobile" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../user_input/" title="UserInput" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1146,19 +1289,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Mobile
+                UserInput
               </span>
             </div>
           </a>
         
         
-          <a href="../task_scheduler/" title="TaskScheduler" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../keyboard/" title="Keyboard" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                TaskScheduler
+                Keyboard
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1181,7 +1324,7 @@
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../../../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/Sleitnick/AeroGameFramework" class="md-footer-social__link fa fa-github"></a>
     
@@ -1193,9 +1336,9 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../../../assets/javascripts/application.ac79c3b0.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
       
     
   </body>
