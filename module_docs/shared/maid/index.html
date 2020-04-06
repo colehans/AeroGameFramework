@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for the AeroGameFramework">
       
       
-        <link rel="canonical" href="https://sleitnick.github.io/AeroGameFramework/module_docs/client_controllers/fade/">
+        <link rel="canonical" href="https://sleitnick.github.io/AeroGameFramework/module_docs/shared/maid/">
       
       
         <meta name="author" content="Stephen Leitnick">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Fade - AeroGameFramework</title>
+        <title>Maid - AeroGameFramework</title>
       
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#methods" tabindex="0" class="md-skip">
+      <a href="#constructor" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Fade
+                Maid
               
             </span>
           
@@ -371,12 +371,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
     
     <label class="md-nav__link" for="nav-7-2">
       Client
@@ -392,12 +390,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2-1" type="checkbox" id="nav-7-2-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2-1" type="checkbox" id="nav-7-2-1">
     
     <label class="md-nav__link" for="nav-7-2-1">
       Controllers
@@ -415,7 +411,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user_input/" title="UserInput" class="md-nav__link">
+    <a href="../../client_controllers/user_input/" title="UserInput" class="md-nav__link">
       UserInput
     </a>
   </li>
@@ -446,7 +442,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user_inputs/mouse/" title="Mouse" class="md-nav__link">
+    <a href="../../client_controllers/user_inputs/mouse/" title="Mouse" class="md-nav__link">
       Mouse
     </a>
   </li>
@@ -458,7 +454,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user_inputs/keyboard/" title="Keyboard" class="md-nav__link">
+    <a href="../../client_controllers/user_inputs/keyboard/" title="Keyboard" class="md-nav__link">
       Keyboard
     </a>
   </li>
@@ -470,7 +466,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user_inputs/gamepad/" title="Gamepad" class="md-nav__link">
+    <a href="../../client_controllers/user_inputs/gamepad/" title="Gamepad" class="md-nav__link">
       Gamepad
     </a>
   </li>
@@ -482,7 +478,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user_inputs/mobile/" title="Mobile" class="md-nav__link">
+    <a href="../../client_controllers/user_inputs/mobile/" title="Mobile" class="md-nav__link">
       Mobile
     </a>
   </li>
@@ -497,149 +493,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Fade
-      </label>
-    
-    <a href="./" title="Fade" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../client_controllers/fade/" title="Fade" class="md-nav__link">
       Fade
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#innumber-duration-boolean-async" class="md-nav__link">
-    In([Number duration [, Boolean async]])
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#outnumber-duration-boolean-async" class="md-nav__link">
-    Out([Number duration [, Boolean async]])
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tonumber-transparency-number-duration-boolean-async" class="md-nav__link">
-    To(Number transparency [, Number duration [, Boolean async]])
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fromtonumber-from-number-to-number-dur-boolean-async" class="md-nav__link">
-    FromTo(Number from, Number to [, Number dur [, Boolean async]])
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#settextstring-text" class="md-nav__link">
-    SetText(String text)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cleartext" class="md-nav__link">
-    ClearText()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#settextsizenumber-textsize" class="md-nav__link">
-    SetTextSize(Number textSize)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setfontfont-font" class="md-nav__link">
-    SetFont(Font font)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setbackgroundcolorcolor3-color" class="md-nav__link">
-    SetBackgroundColor(Color3 color)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#settextcolorcolor3-color" class="md-nav__link">
-    SetTextColor(Color3 color)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#seteasingstyleeasingstyle-easingstyle" class="md-nav__link">
-    SetEasingStyle(EasingStyle easingStyle)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getscreengui" class="md-nav__link">
-    GetScreenGui()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getframe" class="md-nav__link">
-    GetFrame()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getlabel" class="md-nav__link">
-    GetLabel()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -649,7 +507,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../task_scheduler/" title="TaskScheduler" class="md-nav__link">
+    <a href="../../client_controllers/task_scheduler/" title="TaskScheduler" class="md-nav__link">
       TaskScheduler
     </a>
   </li>
@@ -741,10 +599,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3" checked>
     
     <label class="md-nav__link" for="nav-7-3">
       Shared Modules
@@ -762,7 +622,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/base64/" title="Base64" class="md-nav__link">
+    <a href="../base64/" title="Base64" class="md-nav__link">
       Base64
     </a>
   </li>
@@ -774,7 +634,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/date/" title="Date" class="md-nav__link">
+    <a href="../date/" title="Date" class="md-nav__link">
       Date
     </a>
   </li>
@@ -786,7 +646,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/event/" title="Event" class="md-nav__link">
+    <a href="../event/" title="Event" class="md-nav__link">
       Event
     </a>
   </li>
@@ -798,7 +658,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/listener_list/" title="ListenerList" class="md-nav__link">
+    <a href="../listener_list/" title="ListenerList" class="md-nav__link">
       ListenerList
     </a>
   </li>
@@ -808,11 +668,99 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../shared/maid/" title="Maid" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Maid
+      </label>
+    
+    <a href="./" title="Maid" class="md-nav__link md-nav__link--active">
       Maid
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    Constructor
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maidnew" class="md-nav__link">
+    Maid.new()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#givetasktask" class="md-nav__link">
+    GiveTask(task)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#givepromisepromise" class="md-nav__link">
+    GivePromise(promise)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docleaning" class="md-nav__link">
+    DoCleaning()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destroy" class="md-nav__link">
+    Destroy()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -822,7 +770,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/promise/" title="Promise" class="md-nav__link">
+    <a href="../promise/" title="Promise" class="md-nav__link">
       Promise
     </a>
   </li>
@@ -834,7 +782,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/string_util/" title="StringUtil" class="md-nav__link">
+    <a href="../string_util/" title="StringUtil" class="md-nav__link">
       StringUtil
     </a>
   </li>
@@ -846,7 +794,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/table_util/" title="TableUtil" class="md-nav__link">
+    <a href="../table_util/" title="TableUtil" class="md-nav__link">
       TableUtil
     </a>
   </li>
@@ -858,7 +806,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../shared/thread/" title="Thread" class="md-nav__link">
+    <a href="../thread/" title="Thread" class="md-nav__link">
       Thread
     </a>
   </li>
@@ -893,6 +841,26 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    Constructor
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maidnew" class="md-nav__link">
+    Maid.new()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     Methods
   </a>
@@ -901,99 +869,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#innumber-duration-boolean-async" class="md-nav__link">
-    In([Number duration [, Boolean async]])
+  <a href="#givetasktask" class="md-nav__link">
+    GiveTask(task)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#outnumber-duration-boolean-async" class="md-nav__link">
-    Out([Number duration [, Boolean async]])
+  <a href="#givepromisepromise" class="md-nav__link">
+    GivePromise(promise)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#tonumber-transparency-number-duration-boolean-async" class="md-nav__link">
-    To(Number transparency [, Number duration [, Boolean async]])
+  <a href="#docleaning" class="md-nav__link">
+    DoCleaning()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#fromtonumber-from-number-to-number-dur-boolean-async" class="md-nav__link">
-    FromTo(Number from, Number to [, Number dur [, Boolean async]])
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#settextstring-text" class="md-nav__link">
-    SetText(String text)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cleartext" class="md-nav__link">
-    ClearText()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#settextsizenumber-textsize" class="md-nav__link">
-    SetTextSize(Number textSize)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setfontfont-font" class="md-nav__link">
-    SetFont(Font font)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setbackgroundcolorcolor3-color" class="md-nav__link">
-    SetBackgroundColor(Color3 color)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#settextcolorcolor3-color" class="md-nav__link">
-    SetTextColor(Color3 color)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#seteasingstyleeasingstyle-easingstyle" class="md-nav__link">
-    SetEasingStyle(EasingStyle easingStyle)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getscreengui" class="md-nav__link">
-    GetScreenGui()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getframe" class="md-nav__link">
-    GetFrame()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getlabel" class="md-nav__link">
-    GetLabel()
+  <a href="#destroy" class="md-nav__link">
+    Destroy()
   </a>
   
 </li>
@@ -1020,113 +918,55 @@
               
                 
                 
-                  <h1>Fade</h1>
+                  <h1>Maid</h1>
                 
-                <p>The Fade controller allows for easy and simple fade-in and fade-out effects on the screen.</p>
-<p>For most cases, using just the <code>In</code> and <code>Out</code> methods is enough.</p>
+                <p>The Maid class lets you easily watch and clean up objects, events, and other tasks. Written by <a href="https://github.com/Quenty">Quenty</a>, this class has proven itself worthy in some of Roblox's most successful games.</p>
+<hr />
+<h2 id="constructor">Constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h2>
+<h3 id="maidnew"><code>Maid.new()</code><a class="headerlink" href="#maidnew" title="Permanent link">&para;</a></h3>
+<p>Creates a new Maid instance.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">maid</span> <span class="o">=</span> <span class="n">Maid</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+</code></pre></div>
+</td></tr></table>
+
+<hr />
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
-<h3 id="innumber-duration-boolean-async"><code>In([Number duration [, Boolean async]])</code><a class="headerlink" href="#innumber-duration-boolean-async" title="Permanent link">&para;</a></h3>
-<p>Fade in from black.</p>
+<h3 id="givetasktask"><code>GiveTask(task)</code><a class="headerlink" href="#givetasktask" title="Permanent link">&para;</a></h3>
+<p>Stores a task. The task can be an event connection, an instance or table with a <code>Destroy</code> method, or a function. When the maid's <code>DoCleaning</code> or <code>Destroy</code> method is invoked, these tasks will be cleaned up. Events will be disconnected, instances will be destroyed, and functions will be called.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">In</span><span class="p">()</span> <span class="c1">-- Fade in over 0.5 seconds</span>
-<span class="n">Fade</span><span class="p">:</span><span class="n">In</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span> <span class="c1">-- Fade in over 1.5 seconds)</span>
-<span class="n">Fade</span><span class="p">:</span><span class="n">In</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span> <span class="c1">-- Fade in asynchronously over 1.5 seconds</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">maid</span><span class="p">:</span><span class="n">GiveTask</span><span class="p">(</span><span class="n">myModel</span><span class="p">)</span>
+<span class="n">maid</span><span class="p">:</span><span class="n">GiveTask</span><span class="p">(</span><span class="n">workspace</span><span class="p">.</span><span class="n">ChildAdded</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="kr">end</span><span class="p">))</span>
+<span class="n">maid</span><span class="p">:</span><span class="n">GiveTask</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span> <span class="kr">end</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
+<p><strong>Returns:</strong> <code>number</code> index of the task.</p>
 <hr />
-<h3 id="outnumber-duration-boolean-async"><code>Out([Number duration [, Boolean async]])</code><a class="headerlink" href="#outnumber-duration-boolean-async" title="Permanent link">&para;</a></h3>
-<p>Fade out to black.</p>
+<h3 id="givepromisepromise"><code>GivePromise(promise)</code><a class="headerlink" href="#givepromisepromise" title="Permanent link">&para;</a></h3>
+<p>Stores a promise. If the maid is cleaned up and the promise is not completed, the promise will be cancelled.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">Out</span><span class="p">()</span> <span class="c1">-- Fade out over 0.5 seconds</span>
-<span class="n">Fade</span><span class="p">:</span><span class="n">Out</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span> <span class="c1">-- Fade out over 1.5 seconds)</span>
-<span class="n">Fade</span><span class="p">:</span><span class="n">Out</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span> <span class="c1">-- Fade out asynchronously over 1.5 seconds</span>
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">maid</span><span class="p">:</span><span class="n">GivePromise</span><span class="p">(</span><span class="n">Promise</span><span class="p">.</span><span class="n">Async</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">resolve</span><span class="p">,</span> <span class="n">reject</span><span class="p">)</span>
+    <span class="n">wait</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">resolve</span><span class="p">()</span>
+<span class="kr">end</span><span class="p">))</span>
+</code></pre></div>
+</td></tr></table>
+
+<p><strong>Returns:</strong> Promise</p>
+<hr />
+<h3 id="docleaning"><code>DoCleaning()</code><a class="headerlink" href="#docleaning" title="Permanent link">&para;</a></h3>
+<p>Cleans up all the tasks. Event connections will be disconnected, instances will be destroyed, and functions will be called.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">maid</span><span class="p">:</span><span class="n">DoCleaning</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table>
 
 <hr />
-<h3 id="tonumber-transparency-number-duration-boolean-async"><code>To(Number transparency [, Number duration [, Boolean async]])</code><a class="headerlink" href="#tonumber-transparency-number-duration-boolean-async" title="Permanent link">&para;</a></h3>
-<p>Fade to the given transparency, starting at whatever the current fade transparency is set.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">To</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span> <span class="c1">-- Fade to a transparency of 0.75 (75%)</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="fromtonumber-from-number-to-number-dur-boolean-async"><code>FromTo(Number from, Number to [, Number dur [, Boolean async]])</code><a class="headerlink" href="#fromtonumber-from-number-to-number-dur-boolean-async" title="Permanent link">&para;</a></h3>
-<p>Fade from one transparency level to another. This is also used internally by the <code>In</code> and <code>Out</code> fade methods.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">FromTo</span><span class="p">(</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span> <span class="c1">-- Fade from 0.75 to 0.25</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="settextstring-text"><code>SetText(String text)</code><a class="headerlink" href="#settextstring-text" title="Permanent link">&para;</a></h3>
-<p>Set the text that will show up in the center of the screen when the fade screen is visible.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">SetText</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="cleartext"><code>ClearText()</code><a class="headerlink" href="#cleartext" title="Permanent link">&para;</a></h3>
-<p>Clear the text on the fade screen.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">ClearText</span><span class="p">()</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="settextsizenumber-textsize"><code>SetTextSize(Number textSize)</code><a class="headerlink" href="#settextsizenumber-textsize" title="Permanent link">&para;</a></h3>
-<p>Set the text size for the fade screen label.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">SetTextSize</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="setfontfont-font"><code>SetFont(Font font)</code><a class="headerlink" href="#setfontfont-font" title="Permanent link">&para;</a></h3>
-<p>Set the font for the fade screen label.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">SetFont</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Highway</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="setbackgroundcolorcolor3-color"><code>SetBackgroundColor(Color3 color)</code><a class="headerlink" href="#setbackgroundcolorcolor3-color" title="Permanent link">&para;</a></h3>
-<p>Sets the background color of the fade frame.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">SetBackgroundColor</span><span class="p">(</span><span class="n">Color3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="settextcolorcolor3-color"><code>SetTextColor(Color3 color)</code><a class="headerlink" href="#settextcolorcolor3-color" title="Permanent link">&para;</a></h3>
-<p>Sets the text color of the fade text label.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">SetBackgroundColor</span><span class="p">(</span><span class="n">Color3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="seteasingstyleeasingstyle-easingstyle"><code>SetEasingStyle(EasingStyle easingStyle)</code><a class="headerlink" href="#seteasingstyleeasingstyle-easingstyle" title="Permanent link">&para;</a></h3>
-<p>Sets the tween easing style for the fading effect. Defaults to Quad.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Fade</span><span class="p">:</span><span class="n">SetEasingStyle</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">EasingStyle</span><span class="p">.</span><span class="n">Quint</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="getscreengui"><code>GetScreenGui()</code><a class="headerlink" href="#getscreengui" title="Permanent link">&para;</a></h3>
-<p>Returns the ScreenGui used by the Fade controller.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">gui</span> <span class="o">=</span> <span class="n">Fade</span><span class="p">:</span><span class="n">GetScreenGui</span><span class="p">()</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="getframe"><code>GetFrame()</code><a class="headerlink" href="#getframe" title="Permanent link">&para;</a></h3>
-<p>Returns the Frame used by the Fade controller.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">gui</span> <span class="o">=</span> <span class="n">Fade</span><span class="p">:</span><span class="n">GetFrame</span><span class="p">()</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="getlabel"><code>GetLabel()</code><a class="headerlink" href="#getlabel" title="Permanent link">&para;</a></h3>
-<p>Returns the TextLabel used by the Fade controller.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">gui</span> <span class="o">=</span> <span class="n">Fade</span><span class="p">:</span><span class="n">GetLabel</span><span class="p">()</span>
+<h3 id="destroy"><code>Destroy()</code><a class="headerlink" href="#destroy" title="Permanent link">&para;</a></h3>
+<p>Alias for <code>DoCleaning</code>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">maid</span><span class="p">:</span><span class="n">Destroy</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table>
                 
@@ -1150,7 +990,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../user_inputs/mobile/" title="Mobile" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../listener_list/" title="ListenerList" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1159,19 +999,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Mobile
+                ListenerList
               </span>
             </div>
           </a>
         
         
-          <a href="../task_scheduler/" title="TaskScheduler" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../promise/" title="Promise" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                TaskScheduler
+                Promise
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

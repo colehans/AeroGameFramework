@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/logo_32.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
     
     
       
@@ -46,7 +46,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -57,12 +57,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#services" tabindex="1" class="md-skip">
+      <a href="#services" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -98,9 +98,9 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://sleitnick.github.io/AeroGameFramework/" title="AeroGameFramework" class="md-header-nav__button md-logo">
+        <a href="https://sleitnick.github.io/AeroGameFramework/" title="AeroGameFramework" aria-label="AeroGameFramework" class="md-header-nav__button md-logo">
           
-            <img src="../img/logo_64.png" width="24" height="24">
+            <img alt="logo" src="../img/logo_64.png" width="24" height="24">
           
         </a>
       </div>
@@ -129,7 +129,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
@@ -170,7 +170,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://sleitnick.github.io/AeroGameFramework/" title="AeroGameFramework" class="md-nav__button md-logo">
       
-        <img src="../img/logo_64.png" width="48" height="48">
+        <img alt="logo" src="../img/logo_64.png" width="48" height="48">
       
     </a>
     AeroGameFramework
@@ -841,6 +841,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../module_docs/shared/maid/" title="Maid" class="md-nav__link">
+      Maid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../module_docs/shared/promise/" title="Promise" class="md-nav__link">
       Promise
     </a>
@@ -1094,7 +1106,7 @@
 13
 14
 15
-16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">MyService</span> <span class="o">=</span> <span class="p">{</span><span class="n">Client</span> <span class="o">=</span> <span class="p">{}}</span>
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">MyService</span> <span class="o">=</span> <span class="p">{</span><span class="n">Client</span> <span class="o">=</span> <span class="p">{}}</span>
 
 <span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
     <span class="c1">-- Called after all services have been initialized</span>
@@ -1110,7 +1122,7 @@
 <span class="kr">end</span>
 
 <span class="kr">return</span> <span class="n">MyService</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <h3 id="injected-properties">Injected Properties<a class="headerlink" href="#injected-properties" title="Permanent link">&para;</a></h3>
@@ -1210,7 +1222,7 @@
 6
 7
 8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">-- Custom method:</span>
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1">-- Custom method:</span>
 <span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">PrintSomething</span><span class="p">(...)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MyService:&quot;</span><span class="p">,</span> <span class="p">...)</span>
 <span class="kr">end</span>
@@ -1219,16 +1231,16 @@
     <span class="c1">-- Invoke the custom method:</span>
     <span class="n">self</span><span class="p">:</span><span class="n">PrintSomething</span><span class="p">(</span><span class="s2">&quot;Hi&quot;</span><span class="p">,</span> <span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="s2">&quot;ABC&quot;</span><span class="p">)</span>
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <p>Other services can also invoke your custom method:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">AnotherService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">AnotherService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
     <span class="n">self</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">MyService</span><span class="p">:</span><span class="n">PrintSomething</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <hr />
@@ -1246,7 +1258,7 @@
 10
 11
 12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
     <span class="c1">-- Connect to &#39;Hello&#39; event:</span>
     <span class="n">self</span><span class="p">:</span><span class="n">ConnectEvent</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
@@ -1259,7 +1271,7 @@
     <span class="c1">-- Register &#39;Hello&#39; event:</span>
     <span class="n">self</span><span class="p">:</span><span class="n">RegisterEvent</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <hr />
@@ -1280,7 +1292,7 @@
 13
 14
 15
-16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
 
     <span class="kd">local</span> <span class="n">thisThing</span> <span class="o">=</span> <span class="p">{}</span>
 
@@ -1296,7 +1308,7 @@
     <span class="n">self</span><span class="p">:</span><span class="n">WrapModule</span><span class="p">(</span><span class="n">thisThing</span><span class="p">)</span>
 
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <p>This can be useful if you are requiring other non-framework modules in which you want to expose the framework.</p>
@@ -1307,10 +1319,10 @@
 <p>To expose a method to the client, write a function attached to the client table:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyService</span><span class="p">.</span><span class="nc">Client</span><span class="p">:</span><span class="nf">Echo</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyService</span><span class="p">.</span><span class="nc">Client</span><span class="p">:</span><span class="nf">Echo</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
     <span class="kr">return</span> <span class="n">message</span>
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <div class="admonition attention">
@@ -1330,7 +1342,7 @@
  9
 10
 11
-12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
     <span class="c1">-- Fire client event for a specific player:</span>
     <span class="n">self</span><span class="p">:</span><span class="n">FireClientEvent</span><span class="p">(</span><span class="s2">&quot;MyClientEvent&quot;</span><span class="p">,</span> <span class="n">somePlayer</span><span class="p">,</span> <span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
 
@@ -1342,7 +1354,7 @@
     <span class="c1">-- Register client event:</span>
     <span class="n">self</span><span class="p">:</span><span class="n">RegisterClientEvent</span><span class="p">(</span><span class="s2">&quot;MyClientMethod&quot;</span><span class="p">)</span>
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <h3 id="reference-server-table">Reference Server Table<a class="headerlink" href="#reference-server-table" title="Permanent link">&para;</a></h3>
@@ -1355,7 +1367,7 @@
 6
 7
 8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">-- Client-exposed &#39;Echo&#39; method invoking &#39;Print&#39; method:</span>
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1">-- Client-exposed &#39;Echo&#39; method invoking &#39;Print&#39; method:</span>
 <span class="kr">function</span> <span class="nc">MyService</span><span class="p">.</span><span class="nc">Client</span><span class="p">:</span><span class="nf">Echo</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
     <span class="n">self</span><span class="p">.</span><span class="n">Server</span><span class="p">:</span><span class="n">Print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span> <span class="c1">-- Note the reference to &#39;self.Server&#39;</span>
     <span class="kr">return</span> <span class="n">message</span>
@@ -1364,7 +1376,7 @@
 <span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
     <span class="kr">return</span> <span class="n">msg</span>
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <h3 id="caching-results">Caching Results<a class="headerlink" href="#caching-results" title="Permanent link">&para;</a></h3>
@@ -1386,7 +1398,7 @@
 14
 15
 16
-17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyService</span><span class="p">.</span><span class="nc">Client</span><span class="p">:</span><span class="nf">Hello</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyService</span><span class="p">.</span><span class="nc">Client</span><span class="p">:</span><span class="nf">Hello</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
     <span class="kr">return</span> <span class="s2">&quot;Hello! &quot;</span> <span class="o">..</span> <span class="nb">math.random</span><span class="p">()</span>
 <span class="kr">end</span>
 
@@ -1403,7 +1415,7 @@
     <span class="n">self</span><span class="p">:</span><span class="n">CacheClientMethod</span><span class="p">(</span><span class="s2">&quot;Bye&quot;</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
 
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <div class="admonition note">
@@ -1431,7 +1443,7 @@
 12
 13
 14
-15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">MyService</span> <span class="o">=</span> <span class="p">{}</span>
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">MyService</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">MyService</span><span class="p">.</span><span class="n">__aeroOrder</span> <span class="o">=</span> <span class="mi">1</span>
 
 <span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
@@ -1446,7 +1458,7 @@
 <span class="kr">function</span> <span class="nc">AnotherService</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AnotherService will be initialized after MyService&quot;</span><span class="p">)</span>
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <p>By practice, it is discouraged to utilize another service before entering into the <code>Start</code> phase of the service (i.e. after all services have been initialized). However, using <code>__aeroOrder</code> can be used to guarantee initialization order. In the above example, <code>AnotherService</code> would be able to safely utilize <code>MyService</code>, knowing that <code>MyService</code> is guaranteed to have been initialized due to the execution order.</p>
@@ -1457,23 +1469,23 @@
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
     <span class="c1">-- Get some global data from the DataService:</span>
     <span class="kd">local</span> <span class="n">dataService</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">DataService</span>
     <span class="kd">local</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dataService</span><span class="p">:</span><span class="n">GetGlobal</span><span class="p">(</span><span class="s2">&quot;Test&quot;</span><span class="p">)</span>
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <h3 id="using-a-module">Using a Module<a class="headerlink" href="#using-a-module" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
     <span class="kd">local</span> <span class="n">someModule</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Modules</span><span class="p">.</span><span class="n">SomeModule</span>
     <span class="n">someModule</span><span class="p">:</span><span class="n">DoSomething</span><span class="p">()</span>
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 
 <h3 id="using-a-shared-module">Using a Shared module<a class="headerlink" href="#using-a-shared-module" title="Permanent link">&para;</a></h3>
@@ -1482,16 +1494,17 @@
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyService</span><span class="p">:</span><span class="nf">Start</span><span class="p">()</span>
     <span class="c1">-- Print the current date:</span>
     <span class="kd">local</span> <span class="n">Date</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Shared</span><span class="p">.</span><span class="n">Date</span>
     <span class="kd">local</span> <span class="n">now</span> <span class="o">=</span> <span class="n">Date</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Now&quot;</span><span class="p">,</span> <span class="n">now</span><span class="p">)</span>
 <span class="kr">end</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
                 
                   
+                
                 
               
               
@@ -1547,16 +1560,16 @@
       <div class="md-footer-copyright">
         
         powered by
-        <a href="https://www.mkdocs.org">MkDocs</a>
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
         and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs</a>
       </div>
       
   <div class="md-footer-social">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
-      <a href="https://github.com/Sleitnick/AeroGameFramework" class="md-footer-social__link fa fa-github"></a>
+      <a href="https://github.com/Sleitnick/AeroGameFramework" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
     
   </div>
 
@@ -1566,9 +1579,9 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
       
     
   </body>
