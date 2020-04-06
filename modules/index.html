@@ -266,6 +266,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#framework-access" class="md-nav__link">
+    Framework access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-events" class="md-nav__link">
+    Object Events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clientserver-communication" class="md-nav__link">
+    Client/Server Communication
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prevent-init-or-start" class="md-nav__link">
     Prevent Init or Start
   </a>
@@ -803,6 +837,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#framework-access" class="md-nav__link">
+    Framework access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-events" class="md-nav__link">
+    Object Events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clientserver-communication" class="md-nav__link">
+    Client/Server Communication
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prevent-init-or-start" class="md-nav__link">
     Prevent Init or Start
   </a>
@@ -843,6 +911,143 @@
 <span class="c1">-- &#39;MyModule:Start()&#39; and &#39;MyModule:Init()&#39; methods are optional.</span>
 
 <span class="kr">return</span> <span class="n">MyModule</span>
+</code></pre></div>
+</td></tr></table>
+
+<hr />
+<h2 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h2>
+<p>The Modules folder is the preferred location for classes. A Lua pseudo-class will usually look something like this at its core:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">MyClass</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">MyClass</span><span class="p">.</span><span class="n">__index</span> <span class="o">=</span> <span class="n">MyClass</span>
+
+<span class="kr">function</span> <span class="nc">MyClass</span><span class="p">.</span><span class="nf">new</span><span class="p">()</span>
+    <span class="kd">local</span> <span class="n">self</span> <span class="o">=</span> <span class="nb">setmetatable</span><span class="p">({</span>
+        <span class="c1">-- Object properties here</span>
+    <span class="p">},</span> <span class="n">MyClass</span><span class="p">)</span>
+    <span class="kr">return</span> <span class="n">self</span>
+<span class="kr">end</span>
+
+<span class="kr">return</span> <span class="n">MyClass</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="framework-access">Framework access<a class="headerlink" href="#framework-access" title="Permanent link">&para;</a></h3>
+<p>With classes, the Aero <code>Start</code> and <code>Init</code> methods are also available, and are invoked as <em>static</em> methods once. In other words, the methods are not invoked on individual objects created from the class, but are invoked on the class itself. This is useful for referencing AGF modules that the class needs to use. For instance:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">MyClass</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="kd">local</span> <span class="n">Maid</span>
+
+<span class="kr">function</span> <span class="nc">MyClass</span><span class="p">.</span><span class="nf">new</span><span class="p">()</span>
+    <span class="kd">local</span> <span class="n">self</span> <span class="o">=</span> <span class="nb">setmetatable</span><span class="p">({</span>
+        <span class="n">maid</span> <span class="o">=</span> <span class="n">Maid</span><span class="p">.</span><span class="n">new</span><span class="p">();</span> <span class="c1">-- Create a maid object</span>
+    <span class="p">},</span> <span class="n">MyClass</span><span class="p">)</span>
+    <span class="kr">return</span> <span class="n">self</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">MyClass</span><span class="p">:</span><span class="nf">Init</span><span class="p">()</span>
+    <span class="c1">-- Reference the Maid object:</span>
+    <span class="n">Maid</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Shared</span><span class="p">.</span><span class="n">Maid</span>
+<span class="kr">end</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Alternatively, the framework is also injected into the class, thus each object can still access AGF modules, just like other modules:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyClass</span><span class="p">:</span><span class="nf">DoSomething</span><span class="p">()</span>
+    <span class="c1">-- Call a controller within the framework:</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Controllers</span><span class="p">.</span><span class="n">MyController</span><span class="p">:</span><span class="n">Hello</span><span class="p">()</span>
+<span class="kr">end</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="object-events">Object Events<a class="headerlink" href="#object-events" title="Permanent link">&para;</a></h3>
+<p>Creating events is very useful for custom objects, but it is important that these events are properly registered and cleaned up. It is recommended that the ListenerList and/or Maid class is used, as well as a custom-defined Destroy method on your object:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyClass</span><span class="p">.</span><span class="nf">new</span><span class="p">()</span>
+
+    <span class="kd">local</span> <span class="n">self</span> <span class="o">=</span> <span class="nb">setmetatable</span><span class="p">({},</span> <span class="n">MyClass</span><span class="p">)</span>
+
+    <span class="c1">-- Create events:</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Start</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Shared</span><span class="p">.</span><span class="n">Event</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Stop</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Shared</span><span class="p">.</span><span class="n">Event</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+
+    <span class="c1">-- Create maid:</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Maid</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">Shared</span><span class="p">.</span><span class="n">Maid</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Maid</span><span class="p">:</span><span class="n">GiveTask</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">Start</span><span class="p">)</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Maid</span><span class="p">:</span><span class="n">GiveTask</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">Stop</span><span class="p">)</span>
+
+    <span class="kr">return</span> <span class="n">self</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">MyClass</span><span class="p">:</span><span class="nf">Destroy</span><span class="p">()</span>
+    <span class="c1">-- Will destroy the events:</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Maid</span><span class="p">:</span><span class="n">Destroy</span><span class="p">()</span>
+<span class="kr">end</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Now, a <code>MyClass</code> instance could be used as such:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">obj</span><span class="p">.</span><span class="n">Start</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Start!&quot;</span><span class="p">)</span> <span class="kr">end</span><span class="p">)</span>
+<span class="n">wait</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">obj</span><span class="p">:</span><span class="n">Destroy</span><span class="p">()</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="clientserver-communication">Client/Server Communication<a class="headerlink" href="#clientserver-communication" title="Permanent link">&para;</a></h3>
+<p>Allowing class objects to communicate between the server/client boundary is the same as other objects within the framework. For instance, an object on the client invoking the server:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyClass</span><span class="p">:</span><span class="nf">DoSomething</span><span class="p">()</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">MyService</span><span class="p">:</span><span class="n">DoSomething</span><span class="p">()</span>
+<span class="kr">end</span>
 </code></pre></div>
 </td></tr></table>
 
