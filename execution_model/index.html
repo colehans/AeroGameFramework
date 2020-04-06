@@ -299,6 +299,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#external-use" class="md-nav__link">
+    External Use
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wait-for-external-aero" class="md-nav__link">
+    Wait for External Aero
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-external-aero-from-server" class="md-nav__link">
+    Use External Aero from Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-external-aero-from-client" class="md-nav__link">
+    Use External Aero from Client
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#notes-and-best-practices" class="md-nav__link">
     Notes and Best Practices
   </a>
@@ -845,6 +879,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#external-use" class="md-nav__link">
+    External Use
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wait-for-external-aero" class="md-nav__link">
+    Wait for External Aero
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-external-aero-from-server" class="md-nav__link">
+    Use External Aero from Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-external-aero-from-client" class="md-nav__link">
+    Use External Aero from Client
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#notes-and-best-practices" class="md-nav__link">
     Notes and Best Practices
   </a>
@@ -905,6 +973,51 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Set the flag to a truthy value (preferrably just <code>true</code>). See the example under the <a href="../modules/#prevent-init-or-start">Modules</a> page.</p>
+</div>
+<hr />
+<h2 id="external-use">External Use<a class="headerlink" href="#external-use" title="Permanent link">&para;</a></h2>
+<p>It is possible (but not recommended) to use AGF outside of the framework environment. In other words, a script within the workspace can access modules within the framework. This is useful if an existing script or system cannot be included into the framework, but needs to access items within the framework. In order to do this the <code>_G.Aero</code> global is exposed on both the server and the client.</p>
+<p>Accessing <code>_G.Aero</code> from the server will allow access to server-side services and modules, as well as shared modules.</p>
+<p>Accessing <code>_G.Aero</code> from the client will allow access to client-side controllers and modules, as well as shared modules.</p>
+<h3 id="wait-for-external-aero">Wait for External Aero<a class="headerlink" href="#wait-for-external-aero" title="Permanent link">&para;</a></h3>
+<p>Because <code>_G.Aero</code> is not assigned until the framework has fully initialized, external scripts must first check and wait for the global to be assigned before attempting to use it:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">while</span> <span class="p">(</span><span class="ow">not</span> <span class="n">_G</span><span class="p">.</span><span class="n">Aero</span><span class="p">)</span> <span class="kr">do</span> <span class="n">wait</span><span class="p">()</span> <span class="kr">end</span>
+<span class="kd">local</span> <span class="n">aero</span> <span class="o">=</span> <span class="n">_G</span><span class="p">.</span><span class="n">Aero</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="use-external-aero-from-server">Use External Aero from Server<a class="headerlink" href="#use-external-aero-from-server" title="Permanent link">&para;</a></h3>
+<p>Once <code>aero</code> is referenced, it can be used the same way you would use <code>self</code> within a controller or service. For example, using <code>_G.Aero</code> from the server:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">while</span> <span class="p">(</span><span class="ow">not</span> <span class="n">_G</span><span class="p">.</span><span class="n">Aero</span><span class="p">)</span> <span class="kr">do</span> <span class="n">wait</span><span class="p">()</span> <span class="kr">end</span>
+<span class="kd">local</span> <span class="n">aero</span> <span class="o">=</span> <span class="n">_G</span><span class="p">.</span><span class="n">Aero</span>
+
+<span class="n">aero</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">MyService</span><span class="p">:</span><span class="n">Hello</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">maid</span> <span class="o">=</span> <span class="n">aero</span><span class="p">.</span><span class="n">Shared</span><span class="p">.</span><span class="n">Maid</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="use-external-aero-from-client">Use External Aero from Client<a class="headerlink" href="#use-external-aero-from-client" title="Permanent link">&para;</a></h3>
+<p>Using <code>aero</code> from the client is the same as the server, except access will be granted to client-side modules:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kr">while</span> <span class="p">(</span><span class="ow">not</span> <span class="n">_G</span><span class="p">.</span><span class="n">Aero</span><span class="p">)</span> <span class="kr">do</span> <span class="n">wait</span><span class="p">()</span> <span class="kr">end</span>
+<span class="kd">local</span> <span class="n">aero</span> <span class="o">=</span> <span class="n">_G</span><span class="p">.</span><span class="n">Aero</span>
+
+<span class="n">aero</span><span class="p">.</span><span class="n">Controllers</span><span class="p">.</span><span class="n">Fade</span><span class="p">:</span><span class="n">Out</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">date</span> <span class="o">=</span> <span class="n">aero</span><span class="p">.</span><span class="n">Shared</span><span class="p">.</span><span class="n">Date</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Using AGF externally using <code>_G.Aero</code> is considered bad practice. The global is only provided so that edge-cases can be filled where it is not possible to include a script or system into the framework.</p>
 </div>
 <hr />
 <h2 id="notes-and-best-practices">Notes and Best Practices<a class="headerlink" href="#notes-and-best-practices" title="Permanent link">&para;</a></h2>
