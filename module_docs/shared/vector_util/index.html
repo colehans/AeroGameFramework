@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for the AeroGameFramework">
       
       
-        <link rel="canonical" href="https://sleitnick.github.io/AeroGameFramework/module_docs/shared/thread/">
+        <link rel="canonical" href="https://sleitnick.github.io/AeroGameFramework/module_docs/shared/vector_util/">
       
       
         <meta name="author" content="Stephen Leitnick">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Thread - AeroGameFramework</title>
+        <title>VectorUtil - AeroGameFramework</title>
       
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#threadspawnnowfunction-func-variant-args" tabindex="0" class="md-skip">
+      <a href="#clampmagnitudevector-maxmagnitude" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Thread
+                VectorUtil
               
             </span>
           
@@ -728,6 +728,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../thread/" title="Thread" class="md-nav__link">
+      Thread
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -737,11 +749,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Thread
+        VectorUtil
       </label>
     
-    <a href="./" title="Thread" class="md-nav__link md-nav__link--active">
-      Thread
+    <a href="./" title="VectorUtil" class="md-nav__link md-nav__link--active">
+      VectorUtil
     </a>
     
       
@@ -753,29 +765,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#threadspawnnowfunction-func-variant-args" class="md-nav__link">
-    Thread.SpawnNow(Function func [, Variant args...])
+  <a href="#clampmagnitudevector-maxmagnitude" class="md-nav__link">
+    ClampMagnitude(vector, maxMagnitude)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#threadspawnfunction-func-variant-args" class="md-nav__link">
-    Thread.Spawn(Function func, [, Variant args...])
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threaddelaynumber-waittime-function-func-variant-args" class="md-nav__link">
-    Thread.Delay(Number waitTime, Function func [, Variant args...])
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threaddelayrepeatnumber-tm-function-func-variant-args" class="md-nav__link">
-    Thread.DelayRepeat(Number tm, Function func [, Variant args...])
+  <a href="#anglebetweenvector1-vector2" class="md-nav__link">
+    AngleBetween(vector1, vector2)
   </a>
   
 </li>
@@ -788,18 +786,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../vector_util/" title="VectorUtil" class="md-nav__link">
-      VectorUtil
-    </a>
   </li>
 
         
@@ -832,29 +818,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#threadspawnnowfunction-func-variant-args" class="md-nav__link">
-    Thread.SpawnNow(Function func [, Variant args...])
+  <a href="#clampmagnitudevector-maxmagnitude" class="md-nav__link">
+    ClampMagnitude(vector, maxMagnitude)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#threadspawnfunction-func-variant-args" class="md-nav__link">
-    Thread.Spawn(Function func, [, Variant args...])
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threaddelaynumber-waittime-function-func-variant-args" class="md-nav__link">
-    Thread.Delay(Number waitTime, Function func [, Variant args...])
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threaddelayrepeatnumber-tm-function-func-variant-args" class="md-nav__link">
-    Thread.DelayRepeat(Number tm, Function func [, Variant args...])
+  <a href="#anglebetweenvector1-vector2" class="md-nav__link">
+    AngleBetween(vector1, vector2)
   </a>
   
 </li>
@@ -876,75 +848,26 @@
               
                 
                 
-                  <h1>Thread</h1>
+                  <h1>VectorUtil</h1>
                 
-                <p>The Thread module allows an alternative to the built-in globals <code>spawn</code> and <code>delay</code>. The built-in globals are known to throttle unexpectedly. The Thread module will provide the expected behavior for spawning and delayed spawning of new threads.</p>
-<p>Please note that the Lua runtime is single-threaded, and any multi-threading applications are simply utilizing the underlying task scheduler to appear multi-threaded.</p>
+                <p>The VectorUtil module provides utility functions for Roblox vectors.</p>
 <hr />
-<h3 id="threadspawnnowfunction-func-variant-args"><code>Thread.SpawnNow(Function func [, Variant args...])</code><a class="headerlink" href="#threadspawnnowfunction-func-variant-args" title="Permanent link">&para;</a></h3>
-<p>Spawns the given function on a new thread immediately. Internally, this is done by creating, firing, and destroying a BindableEvent. Due to this process, <code>SpawnNow</code> is not necessarily a well-performant operation, and thus should not be used when performance needs to be optimal.</p>
+<h3 id="clampmagnitudevector-maxmagnitude"><code>ClampMagnitude(vector, maxMagnitude)</code><a class="headerlink" href="#clampmagnitudevector-maxmagnitude" title="Permanent link">&para;</a></h3>
+<p>Clamps the magnitude of a vector so it is only a certain length.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Thread</span><span class="p">.</span><span class="n">SpawnNow</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello from SpawnNow&quot;</span><span class="p">)</span>
-<span class="kr">end</span><span class="p">)</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">VectorUtil</span><span class="p">.</span><span class="n">ClampMagnitude</span><span class="p">(</span><span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">15</span><span class="p">)</span> <span class="o">==</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">VectorUtil</span><span class="p">.</span><span class="n">ClampMagnitude</span><span class="p">(</span><span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">20</span><span class="p">)</span>  <span class="o">==</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
 <hr />
-<h3 id="threadspawnfunction-func-variant-args"><code>Thread.Spawn(Function func, [, Variant args...])</code><a class="headerlink" href="#threadspawnfunction-func-variant-args" title="Permanent link">&para;</a></h3>
-<p>Spawns the given function on a new thread. Internally, this is done using RunService's Heartbeat event, which means that the function will be spawned on the next hearbeat step (i.e. next frame).</p>
+<h3 id="anglebetweenvector1-vector2"><code>AngleBetween(vector1, vector2)</code><a class="headerlink" href="#anglebetweenvector1-vector2" title="Permanent link">&para;</a></h3>
+<p>Finds the angle (in radians) between two vectors.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Thread</span><span class="p">.</span><span class="n">Spawn</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello from Spawn&quot;</span><span class="p">)</span>
-<span class="kr">end</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="threaddelaynumber-waittime-function-func-variant-args"><code>Thread.Delay(Number waitTime, Function func [, Variant args...])</code><a class="headerlink" href="#threaddelaynumber-waittime-function-func-variant-args" title="Permanent link">&para;</a></h3>
-<p>Spawns the given function on a new thread after <code>waitTime</code> has elapsed. Internally, this is the same as the above <code>Thread.Spawn</code> function, except for the delayed start.</p>
-<p>Because this function returns the heartbeat connection, the delay can be cancelled by disconnecting the connection.</p>
-<p><strong>Returns:</strong> <a href="https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptConnection">Connection</a></p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1">-- Spawn function after 3 seconds:</span>
-<span class="n">Thread</span><span class="p">.</span><span class="n">Delay</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello from delay&quot;</span><span class="p">)</span>
-<span class="kr">end</span><span class="p">)</span>
-
-<span class="c1">-- Attempt to spawn after 5 seconds, but cancel it after 1 second:</span>
-<span class="kd">local</span> <span class="n">delayCon</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">.</span><span class="n">Delay</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This will never print&quot;</span><span class="p">)</span>
-<span class="kr">end</span><span class="p">)</span>
-<span class="n">wait</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">delayCon</span><span class="p">:</span><span class="n">Disconnect</span><span class="p">()</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="threaddelayrepeatnumber-tm-function-func-variant-args"><code>Thread.DelayRepeat(Number tm, Function func [, Variant args...])</code><a class="headerlink" href="#threaddelayrepeatnumber-tm-function-func-variant-args" title="Permanent link">&para;</a></h3>
-<p>Continuously calls <code>func</code> after <code>tm</code> seconds on a new thread.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">inc</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="n">Thread</span><span class="p">.</span><span class="n">DelayRepeat</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
-    <span class="n">inc</span> <span class="o">=</span> <span class="n">inc</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">inc</span><span class="p">)</span>
-<span class="kr">end</span><span class="p">)</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">v1</span> <span class="o">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">v2</span> <span class="o">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">AngleBetween</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">)</span> <span class="o">==</span> <span class="nb">math.rad</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
                 
@@ -968,7 +891,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../table_util/" title="TableUtil" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../thread/" title="Thread" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -977,25 +900,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                TableUtil
+                Thread
               </span>
             </div>
           </a>
         
-        
-          <a href="../vector_util/" title="VectorUtil" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                VectorUtil
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>

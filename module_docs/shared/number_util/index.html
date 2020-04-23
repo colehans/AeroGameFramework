@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for the AeroGameFramework">
       
       
-        <link rel="canonical" href="https://sleitnick.github.io/AeroGameFramework/module_docs/shared/thread/">
+        <link rel="canonical" href="https://sleitnick.github.io/AeroGameFramework/module_docs/shared/number_util/">
       
       
         <meta name="author" content="Stephen Leitnick">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Thread - AeroGameFramework</title>
+        <title>NumberUtil - AeroGameFramework</title>
       
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#threadspawnnowfunction-func-variant-args" tabindex="0" class="md-skip">
+      <a href="#e" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Thread
+                NumberUtil
               
             </span>
           
@@ -680,11 +680,94 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../number_util/" title="NumberUtil" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        NumberUtil
+      </label>
+    
+    <a href="./" title="NumberUtil" class="md-nav__link md-nav__link--active">
       NumberUtil
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    E
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tau" class="md-nav__link">
+    Tau
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lerpmin-max-alpha" class="md-nav__link">
+    Lerp(min, max, alpha)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lerpclampmin-max-alpha" class="md-nav__link">
+    LerpClamp(min, max, alpha)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverselerpmin-max-num" class="md-nav__link">
+    InverseLerp(min, max, num)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapn-inmin-inmax-outmin-outmax" class="md-nav__link">
+    Map(n, inMin, inMax, outMin, outMax)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roundnum" class="md-nav__link">
+    Round(num)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roundtonum-multiple" class="md-nav__link">
+    RoundTo(num, multiple)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -728,66 +811,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Thread
-      </label>
-    
-    <a href="./" title="Thread" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../thread/" title="Thread" class="md-nav__link">
       Thread
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#threadspawnnowfunction-func-variant-args" class="md-nav__link">
-    Thread.SpawnNow(Function func [, Variant args...])
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threadspawnfunction-func-variant-args" class="md-nav__link">
-    Thread.Spawn(Function func, [, Variant args...])
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threaddelaynumber-waittime-function-func-variant-args" class="md-nav__link">
-    Thread.Delay(Number waitTime, Function func [, Variant args...])
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threaddelayrepeatnumber-tm-function-func-variant-args" class="md-nav__link">
-    Thread.DelayRepeat(Number tm, Function func [, Variant args...])
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -832,29 +860,57 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#threadspawnnowfunction-func-variant-args" class="md-nav__link">
-    Thread.SpawnNow(Function func [, Variant args...])
+  <a href="#e" class="md-nav__link">
+    E
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#threadspawnfunction-func-variant-args" class="md-nav__link">
-    Thread.Spawn(Function func, [, Variant args...])
+  <a href="#tau" class="md-nav__link">
+    Tau
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#threaddelaynumber-waittime-function-func-variant-args" class="md-nav__link">
-    Thread.Delay(Number waitTime, Function func [, Variant args...])
+  <a href="#lerpmin-max-alpha" class="md-nav__link">
+    Lerp(min, max, alpha)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#threaddelayrepeatnumber-tm-function-func-variant-args" class="md-nav__link">
-    Thread.DelayRepeat(Number tm, Function func [, Variant args...])
+  <a href="#lerpclampmin-max-alpha" class="md-nav__link">
+    LerpClamp(min, max, alpha)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverselerpmin-max-num" class="md-nav__link">
+    InverseLerp(min, max, num)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapn-inmin-inmax-outmin-outmax" class="md-nav__link">
+    Map(n, inMin, inMax, outMin, outMax)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roundnum" class="md-nav__link">
+    Round(num)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roundtonum-multiple" class="md-nav__link">
+    RoundTo(num, multiple)
   </a>
   
 </li>
@@ -876,75 +932,83 @@
               
                 
                 
-                  <h1>Thread</h1>
+                  <h1>NumberUtil</h1>
                 
-                <p>The Thread module allows an alternative to the built-in globals <code>spawn</code> and <code>delay</code>. The built-in globals are known to throttle unexpectedly. The Thread module will provide the expected behavior for spawning and delayed spawning of new threads.</p>
-<p>Please note that the Lua runtime is single-threaded, and any multi-threading applications are simply utilizing the underlying task scheduler to appear multi-threaded.</p>
+                <p>The NumberUtil module provides utility functions for Lua numbers.</p>
 <hr />
-<h3 id="threadspawnnowfunction-func-variant-args"><code>Thread.SpawnNow(Function func [, Variant args...])</code><a class="headerlink" href="#threadspawnnowfunction-func-variant-args" title="Permanent link">&para;</a></h3>
-<p>Spawns the given function on a new thread immediately. Internally, this is done by creating, firing, and destroying a BindableEvent. Due to this process, <code>SpawnNow</code> is not necessarily a well-performant operation, and thus should not be used when performance needs to be optimal.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Thread</span><span class="p">.</span><span class="n">SpawnNow</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello from SpawnNow&quot;</span><span class="p">)</span>
-<span class="kr">end</span><span class="p">)</span>
+<h3 id="e"><code>E</code><a class="headerlink" href="#e" title="Permanent link">&para;</a></h3>
+<p>The irrational number e.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">NumberUtil</span><span class="p">.</span><span class="n">E</span> <span class="o">==</span> <span class="mf">2.7182818284590</span>
 </code></pre></div>
 </td></tr></table>
 
 <hr />
-<h3 id="threadspawnfunction-func-variant-args"><code>Thread.Spawn(Function func, [, Variant args...])</code><a class="headerlink" href="#threadspawnfunction-func-variant-args" title="Permanent link">&para;</a></h3>
-<p>Spawns the given function on a new thread. Internally, this is done using RunService's Heartbeat event, which means that the function will be spawned on the next hearbeat step (i.e. next frame).</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Thread</span><span class="p">.</span><span class="n">Spawn</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello from Spawn&quot;</span><span class="p">)</span>
-<span class="kr">end</span><span class="p">)</span>
+<h3 id="tau"><code>Tau</code><a class="headerlink" href="#tau" title="Permanent link">&para;</a></h3>
+<p>Equal to <code>2π</code>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">NumberUtil</span><span class="p">.</span><span class="n">Tau</span> <span class="o">==</span> <span class="mf">6.2831853071796</span>
 </code></pre></div>
 </td></tr></table>
 
 <hr />
-<h3 id="threaddelaynumber-waittime-function-func-variant-args"><code>Thread.Delay(Number waitTime, Function func [, Variant args...])</code><a class="headerlink" href="#threaddelaynumber-waittime-function-func-variant-args" title="Permanent link">&para;</a></h3>
-<p>Spawns the given function on a new thread after <code>waitTime</code> has elapsed. Internally, this is the same as the above <code>Thread.Spawn</code> function, except for the delayed start.</p>
-<p>Because this function returns the heartbeat connection, the delay can be cancelled by disconnecting the connection.</p>
-<p><strong>Returns:</strong> <a href="https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptConnection">Connection</a></p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1">-- Spawn function after 3 seconds:</span>
-<span class="n">Thread</span><span class="p">.</span><span class="n">Delay</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello from delay&quot;</span><span class="p">)</span>
-<span class="kr">end</span><span class="p">)</span>
-
-<span class="c1">-- Attempt to spawn after 5 seconds, but cancel it after 1 second:</span>
-<span class="kd">local</span> <span class="n">delayCon</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">.</span><span class="n">Delay</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This will never print&quot;</span><span class="p">)</span>
-<span class="kr">end</span><span class="p">)</span>
-<span class="n">wait</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">delayCon</span><span class="p">:</span><span class="n">Disconnect</span><span class="p">()</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h3 id="threaddelayrepeatnumber-tm-function-func-variant-args"><code>Thread.DelayRepeat(Number tm, Function func [, Variant args...])</code><a class="headerlink" href="#threaddelayrepeatnumber-tm-function-func-variant-args" title="Permanent link">&para;</a></h3>
-<p>Continuously calls <code>func</code> after <code>tm</code> seconds on a new thread.</p>
+<h3 id="lerpmin-max-alpha"><code>Lerp(min, max, alpha)</code><a class="headerlink" href="#lerpmin-max-alpha" title="Permanent link">&para;</a></h3>
+<p>Interpolate between two numbers by a certain alpha/percentage. The name "lerp" comes from combining <em><strong>l</strong>inear int<strong>erp</strong>olation</em>.</p>
+<p>Visually, think of a number line ranging from 'min' to 'max' and then move along that line by 'alpha' percent.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4
-5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">inc</span> <span class="o">=</span> <span class="mi">0</span>
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">NumberUtil</span><span class="p">.</span><span class="n">Lerp</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="n">NumberUtil</span><span class="p">.</span><span class="n">Lerp</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>   <span class="o">==</span> <span class="mi">5</span>
+<span class="n">NumberUtil</span><span class="p">.</span><span class="n">Lerp</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">)</span> <span class="o">==</span> <span class="mi">12</span>
+<span class="n">NumberUtil</span><span class="p">.</span><span class="n">Lerp</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>   <span class="o">==</span> <span class="mi">25</span>
+</code></pre></div>
+</td></tr></table>
 
-<span class="n">Thread</span><span class="p">.</span><span class="n">DelayRepeat</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
-    <span class="n">inc</span> <span class="o">=</span> <span class="n">inc</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">inc</span><span class="p">)</span>
-<span class="kr">end</span><span class="p">)</span>
+<hr />
+<h3 id="lerpclampmin-max-alpha"><code>LerpClamp(min, max, alpha)</code><a class="headerlink" href="#lerpclampmin-max-alpha" title="Permanent link">&para;</a></h3>
+<p>The same as Lerp, except <code>alpha</code> is clamped between the range of <code>[0, 1]</code>. This helps avoid the resultant number being out of the input range of <code>[min, max]</code>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">NumberUtil</span><span class="p">.</span><span class="n">LerpClamp</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="n">NumberUtil</span><span class="p">.</span><span class="n">LerpClamp</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>   <span class="o">==</span> <span class="mi">15</span>  <span class="c1">-- &#39;alpha&#39; clamped to 1.</span>
+</code></pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="inverselerpmin-max-num"><code>InverseLerp(min, max, num)</code><a class="headerlink" href="#inverselerpmin-max-num" title="Permanent link">&para;</a></h3>
+<p>The inverse of the Lerp function. It returns the <code>alpha</code> value between the range of <code>[min, max]</code> given the <code>num</code>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">NumberUtil</span><span class="p">.</span><span class="n">InverseLerp</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mf">0.5</span>
+<span class="n">NumberUtil</span><span class="p">.</span><span class="n">InverseLerp</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span> <span class="o">==</span> <span class="mf">0.7</span>
+</code></pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="mapn-inmin-inmax-outmin-outmax"><code>Map(n, inMin, inMax, outMin, outMax)</code><a class="headerlink" href="#mapn-inmin-inmax-outmin-outmax" title="Permanent link">&para;</a></h3>
+<p>Remaps the range of 'num' from its old range of <code>[inMin, inMax]</code> to a new range of <code>[outMin, outMax]</code>. This is useful when needing to convert a range of inputs to a different output. For instance, remapping gamepad stick input to a larger range controlling a vehicle steering wheel.</p>
+<p>Mathematically, this is done by doing an inverse lerp with <code>n</code> on <code>[inMin, inMax]</code> to get the correct alpha value, and then lerping that alpha value with the range of <code>[outMin, outMax]</code>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">NumberUtil</span><span class="p">.</span><span class="n">Map</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="n">NumberUtil</span><span class="p">.</span><span class="n">Map</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>     <span class="o">==</span> <span class="mi">5</span>
+</code></pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="roundnum"><code>Round(num)</code><a class="headerlink" href="#roundnum" title="Permanent link">&para;</a></h3>
+<p>Rounds a number to the nearest whole number.</p>
+<p>Internally, this uses the <code>math.floor</code> and <code>math.ceil</code> Lua math functions to round the number.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">NumberUtil</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>  <span class="o">==</span> <span class="mi">2</span>
+<span class="n">NumberUtil</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="mf">3.2</span><span class="p">)</span>  <span class="o">==</span> <span class="mi">3</span>
+<span class="n">NumberUtil</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="roundtonum-multiple"><code>RoundTo(num, multiple)</code><a class="headerlink" href="#roundtonum-multiple" title="Permanent link">&para;</a></h3>
+<p>Rounds a number to the nearest given multiple. An example would be locking world positions onto a larger grid.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">NumberUtil</span><span class="p">.</span><span class="n">RoundTo</span><span class="p">(</span><span class="mf">3.4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
+<span class="n">NumberUtil</span><span class="p">.</span><span class="n">RoundTo</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="o">==</span> <span class="mi">10</span>
 </code></pre></div>
 </td></tr></table>
                 
@@ -968,7 +1032,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../table_util/" title="TableUtil" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../maid/" title="Maid" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -977,19 +1041,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                TableUtil
+                Maid
               </span>
             </div>
           </a>
         
         
-          <a href="../vector_util/" title="VectorUtil" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../promise/" title="Promise" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                VectorUtil
+                Promise
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
