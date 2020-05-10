@@ -778,6 +778,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#anglebetweensignedvector1-vector2-axisvector" class="md-nav__link">
+    AngleBetweenSigned(vector1, vector2, axisVector)
+  </a>
+  
+</li>
+      
       
       
       
@@ -831,6 +838,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#anglebetweensignedvector1-vector2-axisvector" class="md-nav__link">
+    AngleBetweenSigned(vector1, vector2, axisVector)
+  </a>
+  
+</li>
+      
       
       
       
@@ -868,6 +882,19 @@
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">v1</span> <span class="o">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="kd">local</span> <span class="n">v2</span> <span class="o">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">AngleBetween</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">)</span> <span class="o">==</span> <span class="nb">math.rad</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="anglebetweensignedvector1-vector2-axisvector"><code>AngleBetweenSigned(vector1, vector2, axisVector)</code><a class="headerlink" href="#anglebetweensignedvector1-vector2-axisvector" title="Permanent link">&para;</a></h3>
+<p>Finds the signed angle (in radians) between two vectors around the given axis vector.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">v1</span> <span class="o">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">v2</span> <span class="o">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">axis</span> <span class="o">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">AngleBetweenSigned</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">,</span> <span class="n">axis</span><span class="p">)</span> <span class="o">==</span> <span class="nb">math.rad</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
                 
