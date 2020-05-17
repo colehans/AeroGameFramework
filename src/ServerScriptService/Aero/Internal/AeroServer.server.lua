@@ -150,7 +150,7 @@ local function LazyLoadSetup(tbl, folder)
 			if (child:IsA("ModuleScript")) then
 				local obj = require(child)
 				rawset(t, i, obj)
-				if (type(obj) == "table") then
+				if (type(obj) == "table" and not obj.__aeroPreventWrapping) then
 					AeroServer:WrapModule(obj)
 				end
 				return obj
